@@ -14,68 +14,83 @@
 		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" size="16X16">
 		<!--<style></style>   media="all|print|screen|speech"; scoped -->
 	</head>
-	<body></body>
+	<body>
+
+		<header>
+			<div>
+				<a href="#">Logo</a>   <!--Скачивание файла download; target="_blank|_self; type="")-->
+			</div>
+			<nav>
+				<a href="#">Ссылка 1</a>
+				<a href="#">Ссылка 2</a>
+				<a href="#">Ссылка 3</a>
+			</nav>
+		</header>
+
+		<div>
+			<aside>
+				<h4>Боковой раздел страницы</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</aside>
+
+			<main>
+				<h1>Элементы, управляющие видом текста на странице.</h1>
+				<p>
+					<strong>Выделение важного текста</strong> и <b>жирное начертание</b>, <em>акцентрирование на тексте</em> и <i>курсивное начертание</i>, <u>подчёркнутый</u> и <s>перечёркнутый текст.</s> <small>Уменьшенный размер текста</small>, текст в виде <sup>верхнего</sup> и <sub>нижнего</sub> индекса.
+					<br>
+					<mark>Выделенный текст</mark> и <span style="color: green">текст с установленным стилем</span>.
+				</p>
+				<p>
+					Аббревиатура <abbr title="HyperText Markup Language">HTML</abbr>, <cite>название произведения</cite>, <dfn>новый термин</dfn> и <q cite="#">цитата внутри абзаца</q>.
+				</p>
+				<p>
+					Строки кода <code>function abc(a, b) {}</code>, <var>переменные</var>, <kbd>набираемый на клавиатуре текст</kbd> и <samp>результат вывода компьютерной программы</samp>.
+				</p>
+				<p>
+					Текст, выделенный как <del cite="#" datetime="2017-03-20">удалённый</del> и как <ins cite="#" datetime="2017-03-20">добавленный</ins> в <time datetime="2017-03-20">определённую дату</time>.
+				</p>
+			</main>
+			<hr>
+
+			<section>
+				<header>
+					<h2>Заголовок второго уровня</h2>
+				</header>
+
+				<article>
+					<h3>Заголовок третьего уровня</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt assumenda, hic asperiores.</p>
+				</article>
+
+				<article>
+					<h3>Заголовок третьего уровня</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptas at earum.</p>
+				</article>
+			</section>
+		</div>
+
+		<footer>
+			<address>
+				Любые сообщения по поводу данного сайта присылайте на почту <a href="mailto:BurlakovIgVlad@Mail.ru">BurlakovIgVlad@Mail.ru</a>
+			</address>
+		</footer>
+
+	</body>
 </html>
 
-<!--===============Разделы документа===============-->
-<div></div>
-<header></header>   <!--верхняя часть документа или раздела-->
-<nav></nav>   <!--раздел навигационных ссылок-->
-<main></main>   <!--контейнер с основным контентом-->
-<section></section>   <!--раздел документа на контейнеры с разным содержанием и смыслом-->
-<article></article>   <!--деление раздела на логические блоки, статьи-->
-<aside></aside>   <!--раздел с дополнительной информацией-->
-<footer></footer>   <!--нижняя часть документа или раздела-->
 
-
-<!--===============Блоки документа===============-->
-<hr>
-<address></address>
-<figure></figure>   <!--контейнер для группировки контента-->
-<figcaption></figcaption>   <!--подпись к содержимому элемента <figure>-->
+<!--===============Вид текста===============-->
+<bdo dir="ltr|rtl"></bdo>   <!--переопределяет текущее направление текста-->
+<bdi></bdi>   <!--изолирует текст от изменения его направления-->
+<wbr></wbr>   <!--определяет возможный перенос строки в тексте-->
 
 
 <!--===============Блоки текста===============-->
-<h1></h1>-<h6></h6>
-<p></p>
-<br>
 <pre></pre>
 <blockquote cite="URL"></blockquote>
 <ruby></ruby>   <!--определяет небольшую аннотацию (для типографии Восточной Азии)-->
 <rt></rt>   <!--определяет объяснение/произношение символов, используется внутри тега <ruby>-->
 <rp></rp>   <!--определяет, что показывать браузеру, который не поддерживает тег <ruby>-->
-
-
-<!--===============Вид текста===============-->
-<abbr title=""></abbr>
-<cite></cite>
-<q cite="URL"></q>
-<code></code>
-<dfn title=""></dfn>   <!--определения термина-->
-<kbd></kbd>   <!--текст, набираемый на клавиатуре-->
-<var></var>
-<em></em>
-<strong></strong>
-<mark></mark>   <!--выделяет важную часть текста-->
-<bdo dir="ltr|rtl"></bdo>   <!--переопределяет текущее направление текста-->
-<bdi></bdi>   <!--изолирует текст от изменения его направления-->
-<i></i>
-<b></b>
-<span></span>
-<samp></samp>   <!--моноширинный текст-->
-<small></small>
-<sub></sub>
-<sup></sup>
-<s></s>   <!--отображает текст как перечёркнутый-->
-<u></u>   <!--подчеркнутый текст-->
-<wbr></wbr>   <!--определяет возможный перенос строки в тексте-->
-<time datetime=""></time>   <!--определяет время/дату (datatame="YYYY-MM-DDThh:mm:ssTZD")-->
-<del cite="URL" datetime="YYYY-MM-DDTmm:ssTZD"></del>
-<ins cite="URL" datetime="YYYY-MM-DDTmm:ssTZD"></ins>
-
-
-<!--===============Ссылки===============-->
-<a href=""></a>   <!--Скачивание файла download; отношение ссылки rel="nofollow|prefetch|index|search" hreflang="ru"; target="_blank|_self; type="")-->
 
 
 <!--===============Списки===============-->
@@ -139,6 +154,11 @@
 <map name="">
 	<area shape="" coords="" href="" alt="" rel="prefetch">   <!--Форма shape="rect; circle; poly; default"; cords="x1,y1,x2,y2; x,y,радиус; x1,y1,x2,y2,xn,yn"; target="_blank|_self"; hreflang="ru"; media=""; type=""-->
 </map>
+
+
+<!--===============Блоки документа===============-->
+<figure></figure>   <!--контейнер для группировки контента-->
+<figcaption></figcaption>   <!--подпись к содержимому элемента <figure>-->
 
 
 
