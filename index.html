@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Заголовок окна документа</title>
+		<!--<base href="">   target="_blank|_self"-->
+		<meta name="keywords" content="Ключевые слова">
+		<meta name="description" content="Описание документа">
+		<meta name="author" content="Бурлаков И.В.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--content="height=device-height, maximum-scale=2.5|minimum-scale=0.5"-->
+		<meta name="robots" content="index">   <!--content="noindex|follow|nofollow|noarchive"-->
+		<meta http-equiv="refresh" content="180" url="">
+		<link rel="stylesheet" href="assets/stylesheets/main.css">   <!--type="text/css"; media="all|print|screen|speech"-->
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" size="16X16">
+		<!--<style></style>   media="all|print|screen|speech"; scoped -->
+	</head>
+	<body>
+
+		<header>
+			<div>
+				<a href="#">Logo</a>   <!--Скачивание файла download; target="_blank|_self; type="")-->
+			</div>
+			<nav>
+				<a href="#">Ссылка 1</a>
+				<a href="#">Ссылка 2</a>
+				<a href="#">Ссылка 3</a>
+			</nav>
+		</header>
+
+		<div>
+			<aside>
+				<h4>Боковой раздел страницы</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</aside>
+
+			<main>
+				<h1>Элементы, управляющие видом текста на странице.</h1>
+				<p>
+					<strong>Выделение важного текста</strong> и <b>жирное начертание</b>, <em>акцентрирование на тексте</em> и <i>курсивное начертание</i>, <u>подчёркнутый</u> и <s>перечёркнутый текст.</s> <small>Уменьшенный размер текста</small>, текст в виде <sup>верхнего</sup> и <sub>нижнего</sub> индекса.
+					<br>
+					<mark>Выделенный текст</mark> и <span style="color: green">текст с установленным стилем</span> и текст с метка<wbr>ми по допусти<wbr>мому переносу строки.
+				</p>
+				<p>
+					Аббревиатура <abbr title="HyperText Markup Language">HTML</abbr>, <cite>название произведения</cite>, <dfn>новый термин</dfn> и <q cite="#">цитата внутри абзаца</q>.
+				</p>
+				<p>
+					Строки кода <code>function abc(a, b) {}</code>, <var>переменные</var>, <kbd>набираемый на клавиатуре текст</kbd> и <samp>результат вывода компьютерной программы</samp>.
+				</p>
+				<p>
+					Текст, выделенный как <del cite="#" datetime="2017-03-20">удалённый</del> и как <ins cite="#" datetime="2017-03-20">добавленный</ins> в <time datetime="2017-03-20">определённую дату</time>.
+				</p>
+				<blockquote cite="#">Выделение длинных цитат внутри документа</blockquote>
+				<pre>Блок, отражающий текст так, как это   нужно   разработчику</pre>
+				<bdo dir="rtl">Изменение направления текста и <bdi>изолирование</bdi> текста внутри изменённого</bdo>
+			</main>
+			<hr>
+
+			<section>
+				<header>
+					<h2>Другие элементы</h2>
+				</header>
+
+				<article>
+					<h3>Списки</h3>
+					<ol><!--Обратный порядок reversed-->
+						<li>Первый блок</li>
+						<li>Второй блок</li>
+						<li>Третий блок</li>
+					</ol>
+					<ol start="4" type="I">
+						<li>Первый блок</li>
+						<li>Второй блок</li>
+						<li value="10">Третий блок</li>
+					</ol>
+					<ul>
+						<li>Первый блок</li>
+						<li>Второй блок</li>
+						<li>Третий блок</li>
+					</ul>
+					<dl>
+						<dt>Термин 1</dt>
+							<dd>Описание термина 1</dd>
+						<dt>Термин 2</dt>
+							<dd>Описание термина 2</dd>
+					</dl>
+				</article>
+
+				<article>
+					<h3>Таблицы</h3>
+					<table>
+						<caption>Заголовок таблицы</caption>
+						<colgroup>   <!--указывает общую стилевую информацию для группы колонок в таблице-->
+							<col span="" style="">   <!--указывает стилевую информацию для одной или более колонок таблицы-->
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Заглавная ячейка 1</th>   <!--связь ячеек таблицы с заголовками headers="")-->
+								<th>Заглавная ячейка 2</th>
+								<th>Заглавная ячейка 3</th>
+							</tr>
+						</thead>
+						<tfoot></tfoot>
+						<tbody>
+							<tr>
+								<td>Первый</td><td colspan="2">colspan</td>
+							</tr>
+							<tr>
+								<td rowspan="2">r<br>o<br>w<br>s<br>p<br>a<br>n</td><td>Пятый</td><td>Шестой</td>
+							</tr>
+							<tr>
+								<td>Восьмой</td><td>Девятый</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+
+				<article>
+					<h3>Заголовок третьего уровня</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptas at earum.</p>
+				</article>
+			</section>
+		</div>
+
+		<footer>
+			<address>
+				Любые сообщения по поводу данного сайта присылайте на почту <a href="mailto:BurlakovIgVlad@Mail.ru">BurlakovIgVlad@Mail.ru</a>
+			</address>
+		</footer>
+
+	</body>
+</html>
+
+
+<!--===============Формы===============-->
+<form action="URL" name="">   <!--Автозаполнение autocomplete="on|off"; method="get|post"; target="_blank|_self" установка кодировки accept-charset=" "-->
+	<label>   <!--метка для элемента формы, для идентификации for=""-->
+		<input type="" name="" src="URL" value="";>   <!--определяет способ пользовательского вода альтернативный текст alt=""; автозаполнение autocomlete="on|off"; accept=""; первоначальная отметка checked; блокировка поля disabled; height=""; width=""; max="; min=""; maxlength=""; multiple; readonly; required; size=; step=""; type="button|checkbox|color|date|datetime|email|file|hidden|image|month|number|password|radio|range|reset|search|submit|tel|text|time|url|week")-->
+		<datalist id="">   <!--список вариантов, которые можно выбирать при наборе в текстовом поле ввода-->
+			<option value=""></option>   <!--вариант выбора в выпадающем списке (disabled; label=""; selected)-->
+		</datalist>
+	</label>
+	<fieldset name="">   <!--контейнер для объединения элементов формы (disabled; form="")-->
+		<legend></legend>   <!--заголовок для элемента <fieldset>-->
+	</fieldset>
+	<label for="">   <!--метка для элемента формы-->
+		<textarea name="" id="" cols="" rows="" placeholder=""></textarea>   <!--многострочное текстовое поле (autofocus; disabled; maxlength=""; readonly; requared)-->
+	</label>
+	<keygen name="">   <!--используется для генерации пары ключей (disabled; challenge="")-->
+	<button name="" type="" value="" ></button>   <!--определяет интерактивную кнопку (autofocus; disabled; form="" type="button|reset|submit")-->
+	<meter value=""></meter>   <!--определяет скалярное измерение в пределах известного диапазона (form=""; high=""; low="")-->
+	<select name="" id="">   <!--выпадающий список (disabled; multiple; size)-->
+		<optgroup label="">   <!--определяет группу связанных логически элементов списка в выпадающем списке (disabled)--></optgroup>
+	</select>
+	<progress value="" max=""></progress>   <!--отображает текущий прогресс выполнения задачи-->
+	<output name="" for=""></output>   <!--определяет область, в которую выводится результат расчета (form)-->
+</form>
+
+<!--==========Изображения==========-->
+<img src="" alt="" title="" height="" width="">   <!--Атрибут ismap - серверная карта, usemap - клиентская карта контейнера map-->
+<map name="">
+	<area shape="" coords="" href="" alt="" rel="prefetch">   <!--Форма shape="rect; circle; poly; default"; cords="x1,y1,x2,y2; x,y,радиус; x1,y1,x2,y2,xn,yn"; target="_blank|_self"; hreflang="ru"; media=""; type=""-->
+</map>
+
+
+<!--===============Блоки документа===============-->
+<figure></figure>   <!--контейнер для группировки контента-->
+<figcaption></figcaption>   <!--подпись к содержимому элемента <figure>-->
+
+
+
+<!--==========Аудио=========-->
+<audio controls>   <!--Указание ресурса src=""; autoplay; зацикливание loop; полнота загрузки preload="auto|none|metedata")-->
+	<source src="" type=""></source>   <!--Устройство вывода media="all|handheld|print|screen|speech|tv">-->
+	<track src="" kind="" srclang="" label=""></track>   <!--текстовые дорожки (default; kind="captions; chapters; descriptions; metadata; subtitles")-->
+</audio>
+
+
+
+<!--==========Видео=========-->
+<video src="" width="" height="" controls>   <!--видео файл(autoplay; loop; muted; preload="auto; none; metedata")-->
+	<source src="" type=""></source>   <!--звуковой/видео файл (media)-->
+	<track src="" kind="" srclang="" label=""></track>   <!--текстовые дорожки (default; kind="captions; chapters; descriptions; metadata; subtitles")-->
+</video>
+
+
+
+<!--==========Объекты=========-->
+<embed src="" type="" height="" width="">   <!--область для внешнего приложения или интерактивного содержимого-->
+<object name="" data="" type="" height="" width=""></object>   <!--внешний подключаемый ресурс (form=""; usemap="#")-->
+<param name="" value="">   <!--значения параметров для объекта (используется внутри элемента <object>)-->
+
+
+
+<!--==========Фреймы=========-->
+<iframe src="URL" height="" width="" name="">Заменяющий текст</iframe>   <!--Включение безопасного режима sandbox="allow-same-origin|allow-top-navigation|allow-forms|allow-scripts"; бесшовность seamless; scrolling="auto|no|yes"-->
+
+
+<!--===============Интерактивные элементы==============-->
+<details open></details>   <!--скрыть/показать дополнительную информацию-->
+<summary></summary>   <!--заголовок для элемента <details>-->
+<menu>
+
+
+<!--===============Сценарий==============-->
+<script src=""></script>   <!--клиентский сценарий defer|async; charset=""; type=""-->
+<noscript></noscript>   <!--альтернативный контент для браузеров без поддержки сценариев-->
+
+
+<!--==========Рисование=========-->
+<canvas id="" width="" height=""></canvas>   <!--область для рисования графики посредством сценариев-->

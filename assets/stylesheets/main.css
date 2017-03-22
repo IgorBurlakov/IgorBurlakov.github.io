@@ -1,0 +1,651 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/***************Размер***************/
+{
+  width: auto|вел;   /*Устанавливает фиксированную ширину.*/
+  max-width: none|вел;   /*Указывает максимальную фиксированную ширину.*/
+  min-width: none|вел;   /*Указывает минимальную фиксированную ширину.*/
+  height: auto|вел;   /*Устанавливает фиксированную высоту.*/
+  max-height: none|вел;   /*Указывает максимальную фиксированную высоту.*/
+  min-height: none|вел;   /*Указывает минимальную фиксированную высоту.*/
+  overflow: visible|hidden|scroll|auto;   /*Определяет, что предпринять, если содержимое элемента превосходит размер области элемента.*/
+  overflow-x: visible|hidden|scroll|auto;   /*Указывает, обрезать или нет левый/правый край содержимого - если оно переполняет доступную область элемента для его содержания.*/
+  overflow-y: visible|hidden|scroll|auto;   /*Указывает, обрезать или нет верхний/нижний край содержимого - если оно переполняет доступную область элемента для его содержания.*/
+  resize: none|both|horizontal|vertical;   /*Указывает, может ли размер элемента изменяться пользователем.*/
+}
+
+/***************Внешний и внутренний отступы***************/
+{
+  margin;   /*Задает внешние отступы для элемента.*/
+  margin-bottom;   /*Задает ... внешний отступ для элемента (-left; -right; -top).*/
+  padding;   /*Устанавливает внутренние отступы в элементе.*/
+  padding-bottom;   /*Задает ... отступ(внутреннее поле) для элемента (-left; -right; -top).*/
+}
+
+/***************Рамка и контур***************/
+{
+  border;   /*Позволяет использовать основные свойства границ рамки.*/
+  border-bottom;   /*Позволяет использовать значения основных свойств для ... границы рамки (-left; -right; -top).*/
+  border-width;   /*Задает ширину для границ рамки элемента.*/
+  border-bottom-width;   /*Определяет ширину для ... границы рамки (-left-; -right-; -top-).*/
+  border-color;   /*Задает цвет для границ рамки элемента.*/
+  border-bottom-color;   /*Задает цвет для ... границы рамки (-left-; -right-; -top-).*/
+  border-style: solid;   /*Задает стиль для границ рамки элемента (dotted; dashed; double; groove; ridge; inset; outset)*/
+  border-bottom-style;   /*Определяет стиль для ... границы рамки (-left-; -right-; -top-).*/
+  border-image;   /*Позволяет использовать изображение в качестве рамки.*/
+  border-radius;   /*Позволяет изменить форму углов.*/
+  border-bottom-left-radius;   /*Позволяет сделать округлую границу ... ... угла (-bottom-right-; -top-left-; -top-right-).*/
+  outline;   /*Создает внешнюю границу вокруг элемента.*/
+  outline-color;   /*Определяет цвет внешней границы.*/
+  outline-offset;   /*Сдвигает внешнюю границу на заданное расстояние от края элемента.*/
+  outline-style;   /*Указывает стиль для внешней границы.*/
+  outline-width;   /*Указывает ширину для внешней границы.*/
+}
+
+/***************Фон***************/
+{
+  background;   /*Устанавливает несколько или все значения свойств фона в одном объявлении.*/
+  background-attachment;   /*Указывает будет ли фоновое изображение фиксированным.*/
+  background-clip;   /*Определяет область в элементе, для которой задается фон.*/
+  background-color;   /*Устанавливает цвет фона для элемента.*/
+  background-image;   /*Устанавливает фоновое изображение в элементе.*/
+  background-origin;   /*Указывает область позиционирования для фонового изображения.*/
+  background-position;   /*Устанавливает начальное место для фонового изображения.*/
+  background-repeat;   /*Задает, как фоновое изображение будет повторяться на экране.*/
+  background-size;   /*Указывает размер для фонового изображения.*/
+}
+
+/***************Позиционирование***************/
+{
+  bottom;   /*Указывает направление смещения позиционированного элемента от нижнего края.*/
+  clear;   /*Указывает с какой стороны элемента не допускаются плавающие элементы.*/
+  clip;   /*Определяет видимую часть абсолютно позиционированных элементов.*/
+  display;   /*Указывает, как будет отображаться элемент в браузере.*/
+  float;   /*Определяет будет ли элемент плавающим.*/
+  left;   /*Указывает направление смещения позиционированного элемента от левого края.*/
+  position;   /*Определяет метод позиционирования элементов.*/
+  right;   /*Указывает направление смещения позиционированного элемента от правого края.*/
+  top;   /*Указывает направление смещения позиционированного элемента от верхнего края.*/
+  visibility;   /*Определяет, является ли элемент видимым.*/
+  z-index;   /*Указывает порядок расположения элементов по оси aZ.*/
+}
+
+/***************Текст***************/
+{
+  color;   /*Изменяет цвет текста.*/
+  direction;   /*Определяет направление написания текста.*/
+  letter-spacing;   /*Контролирует расстояние между символами в тексте.*/
+  line-height;   /*Определяет межстрочный интервал(интерлиньяж).*/
+  quotes;   /*Определяет тип кавычек для встроенных цитат.*/
+  text-align;   /*Указывает способ выравнивания содержимого по горизонтали.*/
+  text-decoration;   /*Добавляет некоторые элементы декорирования к тексту.*/
+  text-indent;   /*Определяет отступ первой строки в тексте элемента.*/
+  text-justify;   /*Используется, когда свойство text-align установлено в "justify" и указывает, как текст должен выравниваться и наполняться пробелами.*/
+  text-overflow;   /*Указывает, что должно произойти, когда текст переполняет содержащий элемент.*/
+  text-transform;   /*Контролирует использование строчных и прописных букв в тексте.*/
+  text-wrap;   /*Указывает правила переносов строк для текста.*/
+  vertical-align;   /*Определяет вертикальное выравнивание в элементе.*/
+  white-space;   /*Определяет способ обработки пробелов внутри элемента.*/
+  word-break;   /*Определяет правила переноса для не-CJK сценариев.*/
+  word-spacing;   /*Определяет ширину пробелов между словами.*/
+  word-wrap;   /*Позволяет прерывать длинные слова для переноса на другую строку.*/
+}
+
+/***************Шрифт***************/
+{
+  font;   /*Изменяет стандартный вид текста.*/
+  @font-face;   /*Позволяет использование любого шрифта на странице.*/
+  font-family;   /*Указывает шрифт или семейство шрифтов для текста.*/
+  font-size;   /*Указывает размер для шрифта.*/
+  font-size-adjust;   /*Контролирует размер неосновных шрифтов.*/
+  font-stretch;   /*Регулирует ширину текста.*/
+  font-style;   /*Позволяет изменять стиль текста.*/
+  font-variant;   /*Конвертирует строчные буквы в прописные уменьшенного размера.*/
+  font-weight;   /*Задает ширину символов текста.*/
+}
+
+/***************Списки***************/
+{
+  list-style;   /*Управляет маркером в списках.*/
+  list-style-image;   /*Заменяет маркеры списков на изображения.*/
+  list-style-position;   /*Определяет расположение маркера относительно пункта списка.*/
+  list-style-type;   /*Указывает вид маркера в списке.*/
+}
+
+/***************Таблицы***************/
+{
+  border-collapse;   /*Определяет будут ли границы рамки объединены в одну.*/
+  border-spacing;   /*Определяет расстояние между границами смежных ячеек и общей рамкой таблицы.*/
+  caption-side;   /*Указывает расположение заголовка таблицы.*/
+  empty-cells;   /*Регулирует видимость пустых ячеек в таблице.*/
+  table-layout;   /*Задает алгоритм использования макета таблицы.*/
+}
+
+/***************Тени и прозрачность***************/
+{
+  box-shadow;   /*Добавляет эффект отбрасывания тени к элементу.*/
+  opacity;   /*Устанавливает уровень прозрачности элемента.*/
+  text-shadow;   /*Создает тень для текста.*/
+}
+
+/***************Другое****************/
+{
+  appearance;   /*Делает элемент похожим на один из стандартных элементов пользовательского интерфейса.*/
+  box-align;   /*Определяет, как выравнивать дочерние элементы в блоке.*/
+  box-direction;   /*Определяет, в каком направлении будут отображаться дочерние элементы.*/
+  box-flex;   /*Определяет являются ли дочерние элементы блока гибкими в размере или нет.*/
+  box-ordinal-group;   /*Указывает порядок отображения дочерних элементов блока.*/
+  box-orient;   /*Определяет, как будут расположены дочерние элементы в контейнере.*/
+  box-pack;   /*Указывает, где располагаются дочерние элементы блока, когда блок больше, чем размер дочерних элементов.*/
+  box-sizing;   /*Позволяет заставить определенные элементы заполнять область определенным способом.*/
+  column-count;   /*Разделяет элемент на колонки.*/
+  column-gap;   /*Задает расстояние между колонками элемента.*/
+  column-rule;   /*Свойство column-rule позволяет указать значения свойств column-rule-* (ширину, стиль и цвет) в одном объявлении.*/
+  column-rule-color;   /*Определяет цвет границы между колонками.*/
+  column-rule-style;   /*Определяет стиль границы между колонками.*/
+  column-rule-width;   /*Указывает ширину границы между колонками.*/
+  columns;   /*Позволяет использовать значения свойств column-width и column-count в одном объявлении.*/
+  column-span;   /*Указывает элементу количество колонок для обхвата.*/
+  column-width;   /*Определяет ширину колонок.*/
+  content;   /*Вставляет дополнительный контент.*/
+  counter-increment;   /*Увеличивает значение счетчика.*/
+  counter-reset;   /*Устанавливает начальное значение счетчика.*/
+  cursor;   /*Изменяет вид курсора мыши.*/
+  nav-down;   /*Определяет, куда направить фокус при использовании клавиши - стрелка вниз.*/
+  nav-index;   /*Определяет последовательность получения фокуса, с помощью клавиш навигации.*/
+  nav-left;   /*Определяет, куда направить фокус при использовании клавиши - стрелка влево.*/
+  nav-right;   /*Определяет, куда направить фокус при использовании клавиши - стрелка вправо.*/
+  nav-up;   /*Определяет, куда направить фокус при использовании клавиши - стрелка вверх.*/
+  page-break-after;   /*Определяет наличие или отсутствие разрыва страницы после заданного элемента.*/
+  page-break-before;   /*Определяет наличие или отсутствие разрыва страницы перед заданным элементом.*/
+  page-break-inside;   /*Определяет наличие или отсутствие разрыва страницы внутри элемента.*/
+}
+
+/***************Трансформация***************/
+{
+  perspective;   /*Определяет, на сколько пикселей удален 3D элемент от точки обзора.*/
+  perspective-origin;   /*Определяет, где располагается 3D элемент на осях x и y.*/
+  transform;   /*Применяет 2D или 3D преобразование к элементу.*/
+  transform-origin;   /*Позволяет изменить позицию преобразованных элементов.*/
+  transform-style;   /*Определяет, как вложенные элементы будут отображаться в трехмерном пространстве.*/
+  transition;   /*Управляет эффектом трансформации.*/
+  transition-delay;   /*Указывает, когда должен начаться эффект трансформации.*/
+  transition-duration;   /*Указывает продолжительность трансформации.*/
+  transition-property;   /*Указывает название CSS свойства, для которого будет применен эффект трансформации.*/
+  transition-timing-function;   /*Задает кривую скорости для эффекта трансформации.*/
+}
+
+/***************Анимация(-webkit--moz-)***************/
+{
+  @keyframes;   /*Позволяет создавать анимацию.*/
+  animation;   /* Позволяет установить несколько или все значения свойств в одном объявлении.*/
+  animation-delay: 2s;   /*Определяет, когда запустится анимация.*/
+  animation-direction;   /*Указывает будет ли анимация проигрываться в реверсе на альтернативных циклах.*/
+  animation-duration;   /*Определяет сколько понадобится времени, чтобы закончить 1 цикл анимации.*/
+  animation-iteration-count;   /*Определяет сколько раз анимация должна будет проигрываться.*/
+  animation-name;   /*Определяет имя для @keyframes.*/
+  animation-play-state;   /*Указывает будет анимация проигрываться или будет в режиме паузы.*/
+  animation-timing-function;   /*Определяет кривую скорости для анимации.*/
+  backface-visibility;   /*Определяет, должна ли быть видна задняя сторона элемента или нет.*/
+  animation-fill-mode;  /*Задаёт стиль для элемента, когда анимация не проигрывается*/
+}
