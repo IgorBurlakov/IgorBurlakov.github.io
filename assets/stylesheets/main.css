@@ -1,0 +1,9 @@
+body {
+	background-color: #ddd;
+}
+.footer, .header {
+	background-color: #ccc;
+}
+nav, aside,  {
+	background-color: #bbb;
+}
