@@ -1,9 +1,13 @@
 body {
-	background-color: #ddd;
+	width: 75%;
+	margin: 10px auto;
+	line-height: 1.5;
 }
-.footer, .header {
-	background-color: #ccc;
+
+a:link, a:visited {
+	text-decoration: none;
 }
-nav, aside,  {
-	background-color: #bbb;
+
+a:link {
+	color: #00985f;
 }
