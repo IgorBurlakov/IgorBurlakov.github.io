@@ -2,130 +2,106 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Заголовок окна документа</title>
-		<!--<base href="">   target="_blank|_self"-->
-		<meta name="keywords" content="Ключевые слова">
-		<meta name="description" content="Описание документа">
+		<title>Скрипт открытия ссылок</title>
+		<base target="_blank">
 		<meta name="author" content="Бурлаков И.В.">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--content="height=device-height, maximum-scale=2.5|minimum-scale=0.5"-->
-		<meta name="robots" content="index">   <!--content="noindex|follow|nofollow|noarchive"-->
-		<meta http-equiv="refresh" content="180" url="">
-		<link rel="stylesheet" href="assets/stylesheets/main.css">   <!--type="text/css"; media="all|print|screen|speech"-->
-		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" size="16X16">
-		<!--<style></style>   media="all|print|screen|speech"; scoped -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex">
+		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<script>
+			var f = ["http://moscow.megafon.ru", "http://spb.megafon.ru", "http://krasnodar.megafon.ru", "http://samara.megafon.ru", "http://svr.megafon.ru", "http://nn.megafon.ru", "http://nsk.megafon.ru", "http://khb.megafon.ru"];
+			var stf = ["http://moscow.megafon.ru"];
+			var szf = ["http://arhangelsk.megafon.ru", "http://vologda.megafon.ru", "http://iv.megafon.ru", "http://kaliningrad.megafon.ru", "http://kstr.megafon.ru", "http://murmansk.megafon.ru", "http://novgorod.megafon.ru", "http://karelia.megafon.ru", "http://pskov.megafon.ru", "http://spb.megafon.ru", "http://sml.megafon.ru", "http://tver.megafon.ru", "http://yar.megafon.ru"];
+			var kf = ["http://bel.megafon.ru", "http://vrn.megafon.ru", "http://krasnodar.megafon.ru", "http://lc.megafon.ru", "http://adygea.megafon.ru", "http://dagestan.megafon.ru", "http://ingushetia.megafon.ru", "http://kbr.megafon.ru", "http://kchr.megafon.ru", "http://alania.megafon.ru", "http://rostov.megafon.ru", "http://stavropol.megafon.ru", "http://tmb.megafon.ru", "http://chechnya.megafon.ru"];
+			var pf = ["http://astrakhan.megafon.ru", "http://volgograd.megafon.ru", "http://orenburg.megafon.ru", "http://penza.megafon.ru", "http://bashkortostan.megafon.ru", "http://kalmykia.megafon.ru", "http://mariel.megafon.ru", "http://mordovia.megafon.ru", "http://tatarstan.megafon.ru", "http://samara.megafon.ru", "http://saratov.megafon.ru", "http://ulyanovsk.megafon.ru", "http://chuvashia.megafon.ru"];
+			var uf = ["http://kirov.megafon.ru", "http://kurgan.megafon.ru", "http://perm.megafon.ru", "http://komi.megafon.ru", "http://svr.megafon.ru", "http://tyumen.megafon.ru", "http://udm.megafon.ru", "http://xmao.megafon.ru", "http://chel.megafon.ru", "http://yanao.megafon.ru"];
+			var cf = ["http://brn.megafon.ru", "http://vl.megafon.ru", "http://klg.megafon.ru", "http://ks.megafon.ru", "http://nn.megafon.ru", "http://orl.megafon.ru", "http://rzn.megafon.ru", "http://tula.megafon.ru"];
+			var sf = ["http://altay.megafon.ru", "http://kem.megafon.ru", "http://kras.megafon.ru", "http://nsk.megafon.ru", "http://omsk.megafon.ru", "http://altrep.megafon.ru", "http://tyva.megafon.ru", "http://hakas.megafon.ru", "http://tay.megafon.ru", "http://tom.megafon.ru"];
+			var dvf = ["http://amur.megafon.ru", "http://eao.megafon.ru", "http://chita.megafon.ru", "http://irkutsk.megafon.ru", "http://kamchatka.megafon.ru", "http://magadan.megafon.ru", "http://prim.megafon.ru", "http://buryatia.megafon.ru", "http://sakha.megafon.ru", "http://skh.megafon.ru", "http://khb.megafon.ru", "http://chukotka.megafon.ru"];
+			function generateLinks() {
+				var urlValue = document.getElementById("specifiedUrl").value;
+				var region = document.getElementById("region").value;
+				var newLinks = [];
+				switch(region) {
+					case "f":
+						for (var i = 0; i < f.length; i++) {
+							newLinks[i] = f[i]; 
+						}
+						break;
+					case "stf":
+						for (var i = 0; i < stf.length; i++) {
+							newLinks[i] = stf[i]; 
+						}
+						break;
+					case "szf":
+						for (var i = 0; i < szf.length; i++) {
+							newLinks[i] = szf[i]; 
+						}
+						break;
+					case "kf":
+						for (var i = 0; i < kf.length; i++) {
+							newLinks[i] = kf[i]; 
+						}
+						break;
+					case "pf":
+						for (var i = 0; i < pf.length; i++) {
+							newLinks[i] = pf[i]; 
+						}
+						break;
+					case "uf":
+						for (var i = 0; i < uf.length; i++) {
+							newLinks[i] = uf[i]; 
+						}
+						break;
+					case "cf":
+						for (var i = 0; i < cf.length; i++) {
+							newLinks[i] = cf[i]; 
+						}
+						break;
+					case "sf":
+						for (var i = 0; i < sf.length; i++) {
+							newLinks[i] = sf[i]; 
+						}
+						break;
+					case "dvf":
+						for (var i = 0; i < dvf.length; i++) {
+							newLinks[i] = dvf[i]; 
+						}
+						break;
+				}
+				var div = document.getElementById('blockLink');
+				for (var j = 0; j < newLinks.length; j++) {
+					newLinks[j] += urlValue;
+					var e = document.createElement('a');
+					e.href = newLinks[j];
+					e.title = newLinks[j];
+					e.appendChild(document.createTextNode(newLinks[j]));
+					div.appendChild(e);
+					var br = document.createElement("br");
+					div.appendChild(br);
+				}
+			}
+		</script>
 	</head>
 	<body>
-
-		<header class="header">
-			<div>
-				<a href="#">Logo</a>   <!--Скачивание файла download; target="_blank|_self; type="")-->
-			</div>
-			<nav>
-				<a href="#">Ссылка 1</a>
-				<a href="#">Ссылка 2</a>
-				<a href="#">Ссылка 3</a>
-			</nav>
-		</header>
-
-		<div>
-			<aside>
-				<h4>Боковой раздел страницы</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</aside>
-
-			<main>
-				<h1>Элементы, управляющие видом текста на странице.</h1>
-				<p>
-					<strong>Выделение важного текста</strong> и <b>жирное начертание</b>, <em>акцентрирование на тексте</em> и <i>курсивное начертание</i>, <u>подчёркнутый</u> и <s>перечёркнутый текст.</s> <small>Уменьшенный размер текста</small>, текст в виде <sup>верхнего</sup> и <sub>нижнего</sub> индекса.
-					<br>
-					<mark>Выделенный текст</mark> и <span style="color: green">текст с установленным стилем</span> и текст с метка<wbr>ми по допусти<wbr>мому переносу строки.
-				</p>
-				<p>
-					Аббревиатура <abbr title="HyperText Markup Language">HTML</abbr>, <cite>название произведения</cite>, <dfn>новый термин</dfn> и <q cite="#">цитата внутри абзаца</q>.
-				</p>
-				<p>
-					Строки кода <code>function abc(a, b) {}</code>, <var>переменные</var>, <kbd>набираемый на клавиатуре текст</kbd> и <samp>результат вывода компьютерной программы</samp>.
-				</p>
-				<p>
-					Текст, выделенный как <del cite="#" datetime="2017-03-20">удалённый</del> и как <ins cite="#" datetime="2017-03-20">добавленный</ins> в <time datetime="2017-03-20">определённую дату</time>.
-				</p>
-				<blockquote cite="#">Выделение длинных цитат внутри документа</blockquote>
-				<pre>Блок, отражающий текст так, как это   нужно   разработчику</pre>
-				<bdo dir="rtl">Изменение направления текста и <bdi>изолирование</bdi> текста внутри изменённого</bdo>
-			</main>
-			<hr>
-
-			<section>
-				<header>
-					<h2>Другие элементы</h2>
-				</header>
-
-				<article>
-					<h3>Списки</h3>
-					<ol><!--Обратный порядок reversed-->
-						<li>Первый блок</li>
-						<li>Второй блок</li>
-						<li>Третий блок</li>
-					</ol>
-					<ol start="4" type="I">
-						<li>Первый блок</li>
-						<li>Второй блок</li>
-						<li value="10">Третий блок</li>
-					</ol>
-					<ul>
-						<li>Первый блок</li>
-						<li>Второй блок</li>
-						<li>Третий блок</li>
-					</ul>
-					<dl>
-						<dt>Термин 1</dt>
-							<dd>Описание термина 1</dd>
-						<dt>Термин 2</dt>
-							<dd>Описание термина 2</dd>
-					</dl>
-				</article>
-
-				<article>
-					<h3>Таблицы</h3>
-					<table>
-						<caption>Заголовок таблицы</caption>
-						<colgroup>   <!--указывает общую стилевую информацию для группы колонок в таблице-->
-							<col span="" style="">   <!--указывает стилевую информацию для одной или более колонок таблицы-->
-						</colgroup>
-						<thead>
-							<tr>
-								<th>Заглавная ячейка 1</th>   <!--связь ячеек таблицы с заголовками headers="")-->
-								<th>Заглавная ячейка 2</th>
-								<th>Заглавная ячейка 3</th>
-							</tr>
-						</thead>
-						<tfoot></tfoot>
-						<tbody>
-							<tr>
-								<td>Первый</td><td colspan="2">colspan</td>
-							</tr>
-							<tr>
-								<td rowspan="2">r<br>o<br>w<br>s<br>p<br>a<br>n</td><td>Пятый</td><td>Шестой</td>
-							</tr>
-							<tr>
-								<td>Восьмой</td><td>Девятый</td>
-							</tr>
-						</tbody>
-					</table>
-				</article>
-
-				<article>
-					<h3>Заголовок третьего уровня</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptas at earum.</p>
-				</article>
-			</section>
-		</div>
-
-		<footer class="footer">
-			<address>
-				Любые сообщения по поводу данного сайта присылайте на почту <a href="mailto:BurlakovIgVlad@Mail.ru">BurlakovIgVlad@Mail.ru</a>
-			</address>
-		</footer>
-
+		<p>Введите URL:
+			<input type="text" size="100" id="specifiedUrl">
+		</p>
+		Выберите региональность:<br>
+		<select id="region">
+			<option value="f">Филиалы</option>
+			<option value="stf">Столичный филиал</option>
+			<option value="szf">Северо-Западный филиал</option>
+			<option value="kf">Кавказский филиал</option>
+			<option value="pf">Поволжский филиал</option>
+			<option value="uf">Уральский филиал</option>
+			<option value="cf">Центральный филиал</option>
+			<option value="sf">Сибирский филиал</option>
+			<option value="dvf">Дальневосточный филиал</option>
+		</select>
+		<p>
+			<input type="button" value="Сформировать" onclick="generateLinks()">
+		</p>
+		<div id="blockLink"></div>
 	</body>
 </html>
