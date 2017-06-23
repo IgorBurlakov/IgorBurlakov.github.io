@@ -72,14 +72,16 @@
 				var div = document.getElementById('blockLink');
 				for (var j = 0; j < newLinks.length; j++) {
 					newLinks[j] += urlValue;
-					var e = document.createElement('a');
-					e.href = newLinks[j];
-					e.title = newLinks[j];
-					e.appendChild(document.createTextNode(newLinks[j]));
-					div.appendChild(e);
+					var aLink = document.createElement('a');
+					aLink.href = newLinks[j];
+					aLink.title = newLinks[j];
+					aLink.appendChild(document.createTextNode(newLinks[j]));
+					div.appendChild(aLink);
 					var br = document.createElement("br");
 					div.appendChild(br);
 				}
+				var hr = document.createElement('hr');
+				div.appendChild(hr);
 			}
 		</script>
 	</head>
