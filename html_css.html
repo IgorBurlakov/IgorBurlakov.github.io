@@ -39,24 +39,62 @@
 <!--===============Определение структуры===============-->
 <style>
 {	box-sizing: content-box|border-box;   /*Позволяет заставить определенные элементы заполнять область определенным способом.*/
-	display: block|inline|inline-block|table|inline-table|flex|inline-flex|none;   /*Указывает, как будет отображаться элемент в браузере.*/
+	display: block|inline|inline-block|grid|inline-grid|subgrid|flex|inline-flex|table|inline-table|none;   /*Указывает, как будет отображаться элемент в браузере*/}
+</style>
+
+
+
+<!--===============Grid==============-->
+<style>
+{
+	/* Свойства для контейнера */
+	grid-template-columns: px|%|fr|auto; /*Определяет количество и ширину столбцов сетки.*/
+	grid-template-rows: px|%|fr|auto; /*Определяет количество и ширину строк сетки.*/
+	/*Линиям сетки автоматически присваиваются числовые имена (1, 2 и т.д., но есть возможность задать свои имена [line-name])*/
+	/*Если в определении содержатся повторяющиеся части, можно использовать repeat()*/
+	grid-template-areas: [grid-area-name] | . | none; /*Определяет шаблон сетки ссылаясь на имена областей элементов*/
+	grid-template: none | subgrid | grid-template-rows / grid-template-columns;/*Сокращение*/
+	grid-column-gap: px; /*Размер ширины линий между колонками*/
+	grid-row-gap: px; /*Размер ширины линий между строками*/
+	grid-gap: grid-row-gap grid-column-gap; /*Сокращение*/
+	justify-items: start|end|center|stretch; /*Выравнивает содержимое вдоль оси строки*/
+	align-items: start|end|center|stretch; /*Выравнивает содержимое вдоль оси столбца*/
+	justify-content: start|end|center|stretch|space-around|space-between|space-evenly; /*Выравнивает сетку внутри контейнера вдоль оси строки.*/
+	align-content: start|end|center|stretch|space-around|space-between|space-evenly; /*Выравнивает сетку внутри контейнера вдоль оси столбца.*/
+	grid-auto-columns: px|%|fr|auto; /*Определяет размер автоматически созданных треков по оси колонок*/
+	grid-auto-rows: px|%|fr|auto; /*Определяет размер автоматически созданных треков по оси строк*/
+	grid-auto-flow: row|column|row dense|column dense; /*Контролирует алгоритм авто-размещения элементов*/
+	grid: none | grid-template-rows / grid-template-columns | grid-auto-flow [grid-auto-rows / grid-auto-columns]; /*Сокращение*/
+
+	/* Свойства для элементов */
+	grid-column-start: [number] | [name] | span [number] | span [name] | auto;
+	grid-column-end: [number] | [name] | span [number] | span [name] | auto;
+  	grid-row-start: [number] | [name] | span [number] | span [name] | auto;
+  	grid-row-end: [number] | [name] | span [number] | span [name] | auto;
+  	/*Определяют местоположение в сетке ссылаясь на конкретные линии*/
+  	grid-column: grid-column-start / grid-column-end; /*Сокращение*/
+	grid-row: grid-row-start / grid-row-end; /*Сокращение*/
+	grid-area: [grid-area-name] | grid-row-start / grid-column-start / grid-row-end / grid-column-end; /*Позволяет задать имена областей элементам в блоке, также может являться сокращением*/
+	justify-self: start|end|center|stretch; /*Выравнивает содержимое элемента вдоль оси строки*/
+	align-self: start|end|center|stretch; /*Выравнивает содержимое элемента вдоль оси столбца*/
+}
 </style>
 
 
 
 <!--===============Флексы==============-->
 <style>
-{	flex-flow: flex-direction flex-wrap;   /*Является сокращённым свойством для flex-direction и flex-wrap.*/
-	flex-direction: row|row-reverse|column|column-reverse;   /*Задаёт направление основных осей в контейнере*/
+{	flex-direction: row|row-reverse|column|column-reverse;   /*Задаёт направление основных осей в контейнере*/
 	flex-wrap: nowrap|wrap|wrap-reverse;   /*Определяет, будет ли контейнер однострочным или многострочным*/
+	flex-flow: flex-direction flex-wrap;   /*Является сокращённым свойством для flex-direction и flex-wrap.*/
 	justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly;   /*Определяет выравнивание относительно главной оси*/
 	align-items: flex-start|flex-end|center|baseline|stretch;   /*Определяет выравнивание относительно поперечной оси*/
 	align-content: flex-start|flex-end|center|space-between|space-around|stretch;   /*Задаёт тип выравнивания строк внутри флекс-контейнера по поперечной оси*/
 	order: <число>;   /*Определяет порядок вывода флексов внутри флекс-контейнера*/
-	flex: none|flex-grow flex-shrink flex-basis;   /*Сокращённое свойство, указывающее параметры элемента*/
 	flex-grow: <число>;   /*Определяет, сколько пространства может занимать флекс внутри контейнера*/
 	flex-shrink: <число>;   /*Определяет для flex-элемента возможность сжиматься*/
 	flex-basis: auto|px|%;   /*Определяет размер по умолчанию для элемента*/
+	flex: none|flex-grow flex-shrink flex-basis;   /*Сокращённое свойство, указывающее параметры элемента*/
 	align-self: auto|flex-start|flex-end|center|baseline|stretch;   /*Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items*/}
 </style>
 
