@@ -1,107 +1,847 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<title>Сайт Бурлакова Игоря</title>
-		<link rel="stylesheet" href="stylesheets/normalize.css">
-		<link rel="stylesheet" href="stylesheets/style.css">
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon" size="16X16">
-		<meta name="author" content="Бурлаков И.В.">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="robots" content="noindex">
-	</head>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<base href="http://localhost/elevator/">
+	<link href="assets/css/slick.css" rel='stylesheet' type='text/css' />
+	<link href="assets/css/slick-theme.css" rel='stylesheet' type='text/css' />
+	<link href="assets/css/style.css" rel='stylesheet' type='text/css' />
+</head>
+<body>
 
-	<body>
-		<!-- Шапка -->
-		<header>
-			<div>
-				<a href="/">Сайт Бурлакова Игоря</a>
-			</div>
-
-			<div>
-				<a href="/about.html">
-					<img src="/images/igor_burlakov.jpeg" alt="Фото Игоря Бурлакова" title="Узнать обо мне">
+	<!-- header -->
+	<header class="header">
+		<div class="container header__block">
+			<div class="header__logo-block">
+				<a href="/elevator/">
+					<img src="assets/img/header-logo.png" alt="Логотип компании" class="header__logo">
 				</a>
 			</div>
-
-			<nav>
-				<ul>
-					<li>
-						<a href=""></a>
+			<div class="header__menu">
+				<ul class="header__menu-list">
+					<li class="header__menu-item"><a style="cursor: default;" onClick="return:false;">Оборудование</a>
+						<ul class="header__submenu">
+							<li class="header__submenu-item"><a href="equipment.html">Пассажирские лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Коттеджные лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Панорамные лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Траволаторы</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Эскалаторы</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Гидравлические лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Автомобильные лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Грузовые лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Больничные лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Малогрузовые лифты</a></li>
+							<li class="header__submenu-item"><a href="equipment.html">Подъемники для инвалидов</a></li>
+						</ul>
 					</li>
+					<li class="header__menu-item"><a style="cursor: default;" onClick="return:false;">Услуги</a>
+						<ul class="header__submenu">
+							<li class="header__submenu-item"><a href="service.html">Проектирование лифтов</a></li>
+							<li class="header__submenu-item"><a href="service.html">Монтаж лифтов</a></li>
+							<li class="header__submenu-item"><a href="service.html">Обслуживание лифтов</a></li>
+							<li class="header__submenu-item"><a href="service.html">Тех. Освидетельствование</a></li>
+						</ul>
+					</li>
+					<li class="header__menu-item"><a href="portfolio.html">Портфолио</a>
+					</li>
+					<li class="header__menu-item"><a href="cost.html">Стоимость</a></li>
+					<li class="header__menu-item"><a href="about.html">О компании</a></li>
+					<li class="header__menu-item"><a href="blog.html">Полезно знать</a></li>
 				</ul>
-
-				<form action="">
-					<button type="button" name="">Настроить сайт</button>
-				</form>
-			</nav>
-
-			<div>
-				<form>
-					<fieldset>
-						<legend>Настройки</legend>
-					</fieldset>
-				</form>
 			</div>
-		</header>
-		
-		<!-- Основной контент -->
-		<section>
-			<h1>Примеры</h1>
+			<div class="header__mail">
+				<a href="mailto:info@technoliftservice.ru">
+					<img src="assets/img/mail.png" alt="Почта">
+					<span>info@technoliftservice.ru</span>
+				</a>
+			</div>
+			<div class="header__info">
+				<div class="header__tel">
+					<a href="tel:74957409784">
+						<img src="assets/img/phone-icon.png" alt="Телефон">
+						<span>+7 (495) 740-97-84</span>
+					</a>
+				</div>
+				<div class="header__mobile-menu">
+					<span class="header__mobile-menu-line"></span>
+					<span class="header__mobile-menu-line"></span>
+					<span class="header__mobile-menu-line"></span>
+				</div>
+				<button class="header__button">заказать звонок</button>
+			</div>
+		</div>
+	</header>
+	<!-- header -->
 
-			<article>
-				<header>
-					<h2></h2>
-				</header>
-				<section></section>
-				<aside>
-					<form>
-						<fieldset>
-							<legend>Настройки</legend>
-						</fieldset>
-					</form>
-				</aside>
-				<div>
-					<div>
-						<h3>HTML</h3>
-						<pre>
-							<code></code>
-						</pre>
+	<!-- top content -->
+	<section class="top-content">
+		<div class="container top-content__block">
+			<h1 class="top-content__header">Ваше видение, наши усилия</h1>
+			<span class="top-content__title">Мы постоянно ищем новые и лучшие способы перемещения пассажиров.</span>
+			<div class="top-content__form-wrapper">
+				<span class="top-content__top-left-angle"></span>
+				<form class="form-application">
+					<h3 class="form-application__header">Оставьте заявку <span class="form-application__header-bolder">на бесплатную консультацию</span> прямо сейчас!</h3>
+					<div class="form-application__block">
+						<input type="text" placeholder="Ваше имя">
+						<input type="tel" placeholder="Ваш телефон">
+						<input type="email" placeholder="Ваш E-mail">
+						<input type="submit" value="получить консультацию">
+						<label class="form-application__accept">
+							<div class="form-application__accept-marker checked"></div>
+							<input type="checkbox" checked="">
+							<span>Я согласен на обработку данных и с условиями пользовательского соглашения</span>
+						</label>
 					</div>
-					<div>
-						<h3>CSS</h3>
-						<pre>
-							<code></code>
-						</pre>
+				</form>
+				<span class="top-content__bottom-right-angle"></span>
+			</div>
+		</div>		
+	</section>
+	<!-- top content -->
+
+	<!-- advantages -->
+	<section class="advantages">
+		<div class="container">
+			<h2 class="advantages__header">НАШИ ПРЕИМУЩЕСТВА</h2>
+			<span class="header-short-line"></span>
+			<div class="advantages__block">
+				<div class="advantages__item">
+					<div class="advantages__bg-image">
+						<img src="assets/img/guarantee.png" class="advantages__image">
 					</div>
-					<div>
-						<h3>JS</h3>
-						<pre>
-							<code></code>
-						</pre>
+					<p class="advantages__title">Гарантийное обслуживание 12 месяцев</p>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__bg-image">
+						<img src="assets/img/manager.png" class="advantages__image">
+					</div>
+					<p class="advantages__title">Аварийная служба 24/7</p>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__bg-image">
+						<img src="assets/img/stock.png" class="advantages__image">
+					</div>
+					<p class="advantages__title">Собственный склад запчастей</p>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__bg-image">
+						<img src="assets/img/money.png" class="advantages__image">
+					</div>
+					<p class="advantages__title">Цены напрямую от производителя</p>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__bg-image">
+						<img src="assets/img/controller.png" class="advantages__image">
+					</div>
+					<p class="advantages__title">Налаженный контроль качества</p>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__bg-image">
+						<img src="assets/img/instrument.png" class="advantages__image">
+					</div>
+					<p class="advantages__title">Оперативный ремонт и запуск лифта </p>
+				</div>
+				<div class="advantages__line"></div>
+			</div>
+		</div>		
+	</section>
+	<!-- advantages -->
+
+	<!-- equipment -->
+	<section class="equipment">
+		<div class="container">
+			<h2 class="equipment__header">МЫ ПОСТАВЛЯЕМ ОБОРУДОВАНИЕ</h2>
+			<span class="header-short-line"></span>
+			<div class="equipment__block">
+				<div class="equipment__element">
+					<div class="equipment__text-block">
+						<h3 class="equipment__element-header">Грузовые лифты</h3>
+						<a href="equipment.html" class="equipment__button">подробнее</a>
 					</div>
 				</div>
-			</article>
-		</section>
+				<div class="equipment__element">
+					<div class="equipment__text-block">
+						<h3 class="equipment__element-header">Пассажирские лифты</h3>
+						<a href="equipment.html" class="equipment__button">подробнее</a>
+					</div>
+				</div>
+				<div class="equipment__element">
+					<div class="equipment__text-block">
+						<h3 class="equipment__element-header">Коттеджные лифты</h3>
+						<a href="equipment.html" class="equipment__button">подробнее</a>
+					</div>
+				</div>
+				<div class="equipment__wrapper-mobile">
+					<div class="equipment__wrapper-more">
+						<button class="equipment__button-more">смотреть ещё</button>
+					</div>
+					<div class="equipment__element">
+						<div class="equipment__text-block">
+							<h3 class="equipment__element-header">Малогрузовые лифты</h3>
+							<a href="equipment.html" class="equipment__button">подробнее</a>
+						</div>
+					</div>
+					<div class="equipment__element">
+						<div class="equipment__text-block">
+							<h3 class="equipment__element-header">Эскалаторы</h3>
+							<a href="equipment.html" class="equipment__button">подробнее</a>
+						</div>
+					</div>
+					<div class="equipment__element">
+						<div class="equipment__text-block">
+							<h3 class="equipment__element-header">Траволаторы</h3>
+							<a href="equipment.html" class="equipment__button">подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- equipment -->
 
-		<!-- Подвал -->
-		<footer>
-			<nav>
-				<ul>
-					<li>
-						<a href=""></a>
+	<!-- cooperation -->
+	<section class="cooperation">
+		<div class="container">
+			<h2 class="cooperation__header">МЫ СОТРУДНИЧАЕМ С ВЕДУЩИМИ ПРОИЗВОДИТЕЛЯМИ</h2>
+			<span class="header-short-line"></span>
+			<div class="cooperation__block">
+				<div class="cooperation__item otis">
+					<a href="brand.html">
+						<img src="assets/pic/partners/otis.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item kleemann">
+					<a href="brand.html">
+						<img src="assets/pic/partners/kleemann.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item logolm">
+					<a href="brand.html">
+						<img src="assets/pic/partners/logolm.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item kmz">
+					<a href="brand.html">
+						<img src="assets/pic/partners/kmz.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item doppler">
+					<a href="brand.html">
+						<img src="assets/pic/partners/doppler.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item thyssen">
+					<a href="brand.html">
+						<img src="assets/pic/partners/thyssen.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item logo_IGV">
+					<a href="brand.html">
+						<img src="assets/pic/partners/logo_IGV.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item skg-logo">
+					<a href="brand.html">
+						<img src="assets/pic/partners/skg-logo.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item ref-ahmet">
+					<a href="brand.html">
+						<img src="assets/pic/partners/ref-ahmet.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item silver">
+					<a href="brand.html">
+						<img src="assets/pic/partners/silver.png" class="cooperation__image">
+					</a>
+				</div>
+				<div class="cooperation__item macpuarsa">
+					<a href="brand.html">
+						<img src="assets/pic/partners/macpuarsa.png" class="cooperation__image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- cooperation -->
+
+	<!-- any questions? -->
+	<section class="any-questions">
+		<img src="assets/img/application-image-bg.png" class="any-questions__bg-image">
+		<div class="container">
+			<form class="form-application">
+				<h3 class="form-application__header">Остались вопросы?</h3>
+				<span class="form-application__title">Оставьте заяву и наши менеджеры свяжутся с Вами</span>
+				<div class="form-application__block">
+					<input type="text" placeholder="Ваше имя">
+					<input type="tel" placeholder="Ваш телефон">
+					<input type="email" placeholder="Ваш E-mail">
+					<input type="submit" value="отправить">
+					<label class="form-application__accept">
+						<div class="form-application__accept-marker checked"></div>
+						<input type="checkbox" checked="">
+						<span class="form-application__accept-desktop">Нажимая кнопку «ОТПРАВИТЬ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
+						<span class="form-application__accept-mobile">Я согласен на обработку данных и с условиями пользовательского соглашения</span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- any questions? -->
+
+	<!-- our services -->
+	<section class="services">
+		<div class="container">
+			<h2 class="services__header">НАШИ УСЛУГИ</h2>
+			<span class="header-short-line"></span>
+			<div class="services__block">
+				<div class="services__element">
+					<div class="services__text-block">
+						<h3 class="services__element-header">Проектирование</h3>
+						<a href="service.html" class="services__button">подробнее</a>
+					</div>
+				</div>
+				<div class="services__element">
+					<div class="services__text-block">
+						<h3 class="services__element-header">Монтаж</h3>
+						<a href="service.html" class="services__button">подробнее</a>
+					</div>
+				</div>
+				<div class="services__element">
+					<div class="services__text-block">
+						<h3 class="services__element-header">Обслуживание и ремонт</h3>
+						<a href="service.html" class="services__button">подробнее</a>
+					</div>
+				</div>
+				<div class="services__element">
+					<div class="services__text-block">
+						<h3 class="services__element-header">Техническое освидетельствование</h3>
+						<a href="service.html" class="services__button">подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- our services -->
+
+	<!-- calculate the cost -->
+	<section class="calculator">
+		<div class="container">
+			<h2 class="calculator__header">РАССЧИТАЙТЕ СТОИМОСТЬ УСЛУГ</h2>
+			<span class="header-short-line"></span>
+			<div class="calculator__block">
+				<div class="calculator__form-choice">
+					<button class="calculator__button active" data-calculator="elevator">КАЛЬКУЛЯТОР ЛИФТОВ</button>
+					<button class="calculator__button" data-calculator="service">КАЛЬКУЛЯТОР СЕРВИСНОГО ОБСЛУЖИВАНИЯ</button>
+				</div>
+				<div class="calculator__body">
+					<div class="calculator__elevator active">
+						<form class="calculator__elevator-form">
+							<div class="calculator__row">
+								<div class="calculator__property">Выберите тип лифта<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Пассажирский</div>
+										<input class="calculator__value-radio" type="radio" name="type" value="passenger">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Грузовой</div>
+										<input class="calculator__value-radio" type="radio" name="type" value="freight">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Коттеджный</div>
+										<input class="calculator__value-radio" type="radio" name="type" value="cottage">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Малогрузовой</div>
+										<input class="calculator__value-radio" type="radio" name="type" value="low-freight">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Страна производитель<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Россия</div>
+										<input class="calculator__value-radio" type="radio" name="country" value="russia">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Зарубежные страны</div>
+										<input class="calculator__value-radio" type="radio" name="country" value="other">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Грузоподъёмность<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Менее 400</div>
+										<input class="calculator__value-radio" type="radio" name="carrying" value="Less400">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">400</div>
+										<input class="calculator__value-radio" type="radio" name="carrying" value="400">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">630</div>
+										<input class="calculator__value-radio" type="radio" name="carrying" value="630">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">1000</div>
+										<input class="calculator__value-radio" type="radio" name="carrying" value="1000">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">1500</div>
+										<input class="calculator__value-radio" type="radio" name="carrying" value="1500">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Более 2000</div>
+										<input class="calculator__value-radio" type="radio" name="carrying" value="More2000">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Скорость<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">0,5 м/c</div>
+										<input class="calculator__value-radio" type="radio" name="speed" value="0,5">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">1 м/c</div>
+										<input class="calculator__value-radio" type="radio" name="speed" value="1">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">1,6 м/c</div>
+										<input class="calculator__value-radio" type="radio" name="speed" value="1,6">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">от 2 м/c</div>
+										<input class="calculator__value-radio" type="radio" name="speed" value="2">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Количество остановок<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">1</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="1">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">2</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="2">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">3</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="3">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">4</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="4">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">5</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="5">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">6</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="6">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">7</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="7">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">8</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="8">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">9</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="9">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">10</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="10">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">11</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="11">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">12</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="12">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">13</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="13">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">14</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="14">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">15</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="15">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">16</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="16">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">17</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="17">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">18</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="18">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">19</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="19">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">20</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="20">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Более 20</div>
+										<input class="calculator__value-radio" type="radio" name="number-stop" value="more20">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Класс огнеустойкости<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">E30</div>
+										<input class="calculator__value-radio" type="radio" name="fire-resistance" value="e30">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Ei 30</div>
+										<input class="calculator__value-radio" type="radio" name="fire-resistance" value="ei30">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Ei 60</div>
+										<input class="calculator__value-radio" type="radio" name="fire-resistance" value="ei60">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Отделка кабины<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Нержавеющая сталь</div>
+										<input class="calculator__value-radio" type="radio" name="cabin-trim" value="stainless-steel">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Лакокрасочное покрытие</div>
+										<input class="calculator__value-radio" type="radio" name="cabin-trim" value="paintwork">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Индивидуальный дизайн</div>
+										<input class="calculator__value-radio" type="radio" name="cabin-trim" value="individual-design">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Контактные данные<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value calculator__value_contact">
+									<input class="calculator__contact" type="text" placeholder="Ваше имя">
+									<input class="calculator__contact" type="tel" placeholder="Ваш телефон">
+									<input class="calculator__contact" type="email" placeholder="Ваш E-mail">
+								</div>
+							</div>
+							<div class="calculator__attachment">
+								<label class="calculator__attachment-wrapper">
+									<img src="assets/img/clip.png" class="calculator__attachment-image">
+									<input type="file" class="calculator__attachment-input">
+									<span class="calculator__attachment-text">Прикрепить файл</span>	
+								</label>
+							</div>
+							<input type="submit" class="calculator__form-submit" value="Получить расчёт">
+						</form>
+					</div>
+					<div class="calculator__service">
+						<form class="calculator__service-form">
+							<div class="calculator__row">
+								<div class="calculator__property">Тип подъёмного оборудования<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Лифт</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Эскалатор</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Траволатор</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Подъёмник</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Страна производитель<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Россия</div>
+										<input class="calculator__value-radio" type="radio" name="country" value="russia">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Зарубежные страны</div>
+										<input class="calculator__value-radio" type="radio" name="country" value="other">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Грузоподъёмность<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Менее 400</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">400</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">630</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">1000</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">1500</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Более 2000</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Высота подъёма<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value">
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Менее 5м</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">5-10</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">10-50</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">50-100</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">100-200</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+									<label class="calculator__value-wrapper">
+										<div class="calculator__value-text">Более 200</div>
+										<input class="calculator__value-radio" type="radio" name="" value="">
+									</label>
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Количество единиц<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value calculator__value_quantity">
+									<input class="calculator__choice-number" type="number" value="1" min="1" max="1000">
+								</div>
+							</div>
+							<div class="calculator__row">
+								<div class="calculator__property">Контактные данные<span class="calculator__arrow-mobile"></span></div>
+								<div class="calculator__value calculator__value_contact">
+									<input class="calculator__contact" type="text" placeholder="Ваше имя">
+									<input class="calculator__contact" type="tel" placeholder="Ваш телефон">
+									<input class="calculator__contact" type="email" placeholder="Ваш E-mail">
+								</div>
+							</div>
+							<div class="calculator__attachment">
+								<label class="calculator__attachment-wrapper">
+									<img src="assets/img/clip.png" class="calculator__attachment-image">
+									<input type="file" class="calculator__attachment-input">
+									<span class="calculator__attachment-text">Прикрепить файл</span>	
+								</label>
+							</div>
+							<input type="submit" class="calculator__form-submit" value="Получить расчёт">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- calculate the cost -->
+
+	<!-- info blog -->
+	<section class="info-blog">
+		<div class="container">
+			<h2 class="info-blog__header">ПОЛЕЗНО ЗНАТЬ</h2>
+			<span class="header-short-line"></span>
+			<div class="info-blog__block">
+				<div class="info-blog__item info-blog__item_1">
+					<div class="info-blog__text-block">
+						<h3 class="info-blog__item-header">Обзор лифтов российского 
+производства</h3>
+					</div>
+					<div class="info-blog__overlay">
+						<a href="article.html">Подробнее</a>
+					</div>
+				</div>
+				<div class="info-blog__item info-blog__item_2">
+					<div class="info-blog__text-block">
+						<h3 class="info-blog__item-header">Виды лифтовых шахт</h3>
+					</div>
+					<div class="info-blog__overlay">
+						<a href="article.html">Подробнее</a>
+					</div>
+				</div>
+				<div class="info-blog__item info-blog__item_3">
+					<div class="info-blog__text-block">
+						<h3 class="info-blog__item-header">Еще одна статья</h3>
+					</div>
+					<div class="info-blog__overlay">
+						<a href="article.html">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- info blog -->
+
+	<!-- seo info -->
+	<section class="info">
+		<div class="container">
+			<div class="info__text">
+				<h2 class="info__header">О ЛИФТАХ</h2>
+				<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический в</p>
+			</div>
+			<div class="info__square-lines">
+				<img src="assets/pic/about-elevator.png" class="info__image">
+			</div>
+		</div>
+	</section>
+	<!-- seo info -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__menu">
+				<ul class="footer__menu-list">
+					<li class="footer__menu-column">
+						<a href="/elevator/">ГЛАВНАЯ</a>
+					</li>
+					<li class="footer__menu-column">
+						<a style="cursor: default;" onClick="return:false;">ОБОРУДОВАНИЕ</a>
+						<ul class="footer__submenu">
+							<li class="footer__submenu-item"><a href="equipment.html">Пассажирские</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Коттеджные</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Панорамные</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Траволаторы</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Эскалаторы</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Гидравлические</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Автомобильные</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Грузовые</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Больничные</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Малогрузовые</a></li>
+							<li class="footer__submenu-item"><a href="equipment.html">Подъемники для инвалидов</a></li>
+						</ul>
+					</li>
+					<li class="footer__menu-column">
+						<a style="cursor: default;" onClick="return:false;">БРЕНДЫ</a>
+						<ul class="footer__submenu">
+							<li class="footer__submenu-item"><a href="brand.html">OTIS</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">THYSSEN</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">KLEEMANN</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">IGV-Group</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">LM-LIFT</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">AH&MET</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">КМЗ</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">SKG</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">Doppler</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">Mp Lifts</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">Pappas</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">ЩЛЗ</a></li>
+							<li class="footer__submenu-item"><a href="brand.html">Silver Elevator</a></li>
+						</ul>
+					</li>
+					<li class="footer__menu-column">
+						<a style="cursor: default;" onClick="return:false;">УСЛУГИ</a>
+						<ul class="footer__submenu">
+							<li class="footer__submenu-item"><a href="service.html">Проектирование</a></li>
+							<li class="footer__submenu-item"><a href="service.html">Монтаж</a></li>
+							<li class="footer__submenu-item"><a href="service.html">Обслуживание</a></li>
+							<li class="footer__submenu-item"><a href="service.html">Тех. освидетельствование</a></li>
+						</ul>
+					</li>
+					<li class="footer__menu-column">
+						<a href="portfolio.html">ПОРТФОЛИО</a>
+					</li>
+					<li class="footer__menu-column">
+						<a href="cost.html">СТОИМОСТЬ</a>
+					</li>
+					<li class="footer__menu-column">
+						<a href="about.html">О КОМПАНИИ</a>
+					</li>
+					<li class="footer__menu-column">
+						<a href="blog.html">ПОЛЕЗНО ЗНАТЬ</a>
+					</li>
+					<li class="footer__menu-column">
+						<a href="contact.html">КОНТАКТЫ</a>
 					</li>
 				</ul>
-			</nav>
-
-			<div>
-				<a href="/">Сайт Бурлакова Игоря</a>
 			</div>
-
-			<address>
-				<h4>Контакты</h4>
-				<p>E-mail: <a href="mailto:BurlakovIgVlad@mail.ru">BurlakovIgVlad@mail.ru</a></p>
-			</address>
-		</footer>
-	</body>
+			<div class="footer__bottom">
+				<div class="footer__logo">
+					<a href="/elevator">
+						<img src="assets/img/header-logo.png">
+					</a>
+				</div>
+				<div class="footer__facebook">
+					<a href="//www.facebook.com">
+						<img src="assets/img/facebook.png">
+					</a>
+				</div>
+				<div class="footer__info">
+					<div class="footer__email">
+						<a href="mailto:info@technoliftservice.ru">
+							<img src="assets/img/mail.png">
+							<span>info@technoliftservice.ru</span>
+						</a>
+					</div>
+					<div class="footer__address">
+						<img src="assets/img/placeholder.png">
+						<span>г. Москва, ул.Южнопортовая, 28 А, с.17</span>
+					</div>
+				</div>
+				<div class="footer__tel">
+					<a href="tel:74957409784">
+						<img src="assets/img/telephone-handle-silhouette.png">
+						<span>+7 (495) 740-97-84</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+	<script src="assets/js/jquery-3.3.1.min.js" type='text/javascript'></script>
+	<script src="assets/js/slick.min.js" type='text/javascript'></script>
+	<script src="assets/js/scripts.js" type='text/javascript'></script>
+</body>
 </html>
