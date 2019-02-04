@@ -3,8 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Оборудование</title>
-	<base href="http://localhost/elevator/">
+	<title>Главная</title>
 	<link href="assets/css/slick.css" rel='stylesheet' type='text/css' />
 	<link href="assets/css/slick-theme.css" rel='stylesheet' type='text/css' />
 	<link href="assets/css/style.css" rel='stylesheet' type='text/css' />
@@ -15,7 +14,7 @@
 	<header class="header">
 		<div class="container header__block">
 			<div class="header__logo-block">
-				<a href="/elevator/">
+				<a href="/">
 					<img src="assets/img/header-logo.png" alt="Логотип компании" class="header__logo">
 				</a>
 			</div>
@@ -76,79 +75,83 @@
 	<!-- header -->
 
 	<!-- top content -->
-	<section class="top-content">
+	<section class="top-content" style="background-image: url(assets/pic/sun_city_sochi.png)">
 		<div class="container top-content__breadcrumb">
 			<ul class="top-content__breadcrumb-list">
-				<li class="top-content__breadcrumb-item"><a href="/elevator/">Главная</a></li>
+				<li class="top-content__breadcrumb-item"><a href="/">Главная</a></li><span class="top-content__breadcrumb-arrow"></span>
 				<li class="top-content__breadcrumb-item">Пассажирские лифты</li>
 			</ul>
 		</div>
-		<div class="container top-content__block top-content__block_vertical">
-			<h1 class="top-content__header">Пассажирские лифты для жилых и административных зданий</h1>
-			<div class="top-content__form-wrapper">
-				<span class="top-content__top-left-angle"></span>
-				<form class="form-application">
-					<h3 class="form-application__header">При заключении договора на установку лифта “под ключ” - пусконаладочные работы осуществляются бесплатно!</h3>
-					<span class="form-application__title">Оставьте заявку</span>
-					<div class="form-application__block">
-						<input type="text" placeholder="Ваше имя">
-						<input type="tel" placeholder="Ваш телефон">
-						<input type="email" placeholder="Ваш E-mail">
-						<label class="form-application__accept">
-							<div class="form-application__accept-marker checked"></div>
-							<input type="checkbox" checked="">
-							<span>Я согласен на обработку данных и с условиями пользовательского соглашения</span>
-						</label>
-						<input type="submit" value="ОТПРАВИТЬ">
-					</div>
-				</form>
-				<span class="top-content__bottom-right-angle"></span>
+		<div class="container">
+			<div class="top-content__block top-content__block_vertical">
+				<h1 class="top-content__header">Пассажирские лифты для жилых и административных зданий</h1>
+				<div class="top-content__form-wrapper">
+					<span class="top-content__top-left-angle"></span>
+					<form class="form-application">
+						<h3 class="form-application__header">При заключении договора на установку лифта “под ключ” - пусконаладочные работы осуществляются <span class="form-application__header-bolder">бесплатно!</span></h3>
+						<span class="form-application__title">Оставьте заявку</span>
+						<div class="form-application__block">
+							<input type="text" placeholder="Ваше имя">
+							<input type="tel" placeholder="Ваш телефон">
+							<input type="email" placeholder="Ваш E-mail">
+							<input type="submit" value="ОТПРАВИТЬ">
+							<label class="form-application__accept">
+								<div class="form-application__accept-marker checked"></div>
+								<input type="checkbox" checked="">
+								<span>Я согласен на обработку данных и с условиями пользовательского соглашения</span>
+							</label>
+						</div>
+					</form>
+					<span class="top-content__bottom-right-angle"></span>
+				</div>
 			</div>
 		</div>		
 	</section>
 	<!-- top content -->
 
-	<!-- equipment description -->
-	<section class="equipment-description">
+	<!-- equipment detail -->
+	<section class="equipment-detail">
 		<div class="container">
-			<div class="equipment-description__item">
-				<div class="equipment-description__image"></div>
-				<div class="">
-					<h4 class="equipment-description__header">Скорость</h4>
-					<span class="equipment-description__text">от 0,5 до 2,5 м/c</span>
+			<div class="equipment-detail__block">
+				<div class="equipment-detail__item">
+					<div class="equipment-detail__image"></div>
+					<div class="equipment-detail__description">
+						<h4 class="equipment-detail__header">Скорость</h4>
+						<span class="equipment-detail__text">от 0,5 до 2,5 м/c</span>
+					</div>
 				</div>
-			</div>
-			<div class="equipment-description__item">
-				<div class="equipment-description__image"></div>
-				<div class="">
-					<h4 class="equipment-description__header">Грузоподъёмность</h4>
-					<span class="equipment-description__text">от 240 до 1600 кг</span>
+				<div class="equipment-detail__item">
+					<div class="equipment-detail__image"></div>
+					<div class="equipment-detail__description">
+						<h4 class="equipment-detail__header">Грузоподъёмность</h4>
+						<span class="equipment-detail__text">от 240 до 1600 кг</span>
+					</div>
 				</div>
-			</div>
-			<div class="equipment-description__item">
-				<div class="equipment-description__image"></div>
-				<div class="">
-					<h4 class="equipment-description__header">Высота подъёма</h4>
-					<span class="equipment-description__text">до 65 м</span>
+				<div class="equipment-detail__item">
+					<div class="equipment-detail__image"></div>
+					<div class="equipment-detail__description">
+						<h4 class="equipment-detail__header">Высота подъёма</h4>
+						<span class="equipment-detail__text">до 65 м</span>
+					</div>
 				</div>
-			</div>
-			<div class="equipment-description__item">
-				<div class="equipment-description__image"></div>
-				<div class="">
-					<h4 class="equipment-description__header">Класс огнестойкости</h4>
-					<span class="equipment-description__text">от E30 до EI60</span>
+				<div class="equipment-detail__item">
+					<div class="equipment-detail__image"></div>
+					<div class="equipment-detail__description">
+						<h4 class="equipment-detail__header">Класс огнестойкости</h4>
+						<span class="equipment-detail__text">от E30 до EI60</span>
+					</div>
 				</div>
-			</div>
-			<div class="equipment-description__item">
-				<div class="equipment-description__image"></div>
-				<div class="">
-					<h4 class="equipment-description__header">Экономия энергии</h4>
-					<span class="equipment-description__text">до 75%</span>
+				<div class="equipment-detail__item">
+					<div class="equipment-detail__image"></div>
+					<div class="equipment-detail__description">
+						<h4 class="equipment-detail__header">Экономия энергии</h4>
+						<span class="equipment-detail__text">до 75%</span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- equipment description -->
+	<!-- equipment detail -->
 
 	<!-- brands -->
 	<section class="brand">
@@ -156,64 +159,55 @@
 			<h2 class="brand__header">ПРОИЗВОДИТЕЛИ ПАССАЖИРСКИХ ЛИФТОВ</h2>
 			<span class="header-short-line"></span>
 			<div class="brand__block">
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/otis.png);">
 					<h3 class="brand__name">OTIS</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/kleemann.png);">
 					<h3 class="brand__name">KLEEMANN</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/thysen.png);">
 					<h3 class="brand__name">THYSSEN</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/mp.png);">
 					<h3 class="brand__name">Mp Lifts</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/ahmet.png);">
 					<h3 class="brand__name">AH&MET</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/lift-material.png);">
 					<h3 class="brand__name">LIFT MATERIAL</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/kmz.png);">
 					<h3 class="brand__name">КМЗ</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/shlz.png);">
 					<h3 class="brand__name">ЩЛЗ</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
 					</div>
 				</div>
-				<div class="brand__item">
-					<img src="" class="brand__image">
+				<div class="brand__item" style="background-image: url(assets/pic/partner/silver.png);">
 					<h3 class="brand__name">Silver</h3>
 					<div class="brand__overlay">
 						<a href="equipment-brand.html">подробнее</a>
@@ -224,66 +218,301 @@
 	</section>
 	<!-- brands -->
 
-	<!--  equipment search -->
-	<section class="equipment-search">
+	<!--  search -->
+	<section class="filter">
 		<div class="container">
-			<h2 class="equipment-search__header">НАЙДИТЕ ЛИФТ ДЛЯ СЕБЯ</h2>
+			<h2 class="filter__header">НАЙДИТЕ ЛИФТ ДЛЯ СЕБЯ</h2>
 			<span class="header-short-line"></span>
-			<div class="equipment-search__block">
-				<div class="equipment-search__conditions">
-					<div class="equipment-search__conditions-item">
-						<span class="equipment-search__conditions-name"></span>
-						<select name="" id="">
-							<option value=""></option>
+			<div class="filter__block">
+				<div class="filter__conditions">
+					<div class="filter__conditions-item">
+						<span class="filter__conditions-name">ПРОИЗВОДИТЕЛЬ</span>
+						<select name="" id="" class="filter__conditions-select">
+							<option value="">OTIS</option>
+							<option value="">THYSSEN</option>
+							<option value="">KLEEMANN</option>
+							<option value="">IGV-Group</option>
+							<option value="">LM-LIFT</option>
 						</select>
 					</div>
-					<div class="equipment-search__conditions-item">
-						<span class="equipment-search__conditions-name"></span>
-						<select name="" id="">
-							<option value=""></option>
+					<div class="filter__conditions-item">
+						<span class="filter__conditions-name">ПРИМЕНЕНИЕ</span>
+						<select name="" id="" class="filter__conditions-select">
+							<option value="">ЖИЛЫЕ ДОМА</option>
+							<option value="">ЖИЛЫЕ ДОМА</option>
+							<option value="">ЖИЛЫЕ ДОМА</option>
+							<option value="">ЖИЛЫЕ ДОМА</option>
+							<option value="">ЖИЛЫЕ ДОМА</option>
 						</select>
 					</div>
-					<div class="equipment-search__conditions-item">
-						<span class="equipment-search__conditions-name"></span>
-						<select name="" id="">
-							<option value=""></option>
+					<div class="filter__conditions-item">
+						<span class="filter__conditions-name">ВЫСОТА ПОДЪЁМА</span>
+						<select name="" id="" class="filter__conditions-select">
+							<option value="">Менее 5м</option>
+							<option value="">5-10</option>
+							<option value="">10-50</option>
+							<option value="">50-100</option>
+							<option value="">100-200</option>
+							<option value="">Более 200</option>
 						</select>
 					</div>
-					<div class="equipment-search__conditions-item">
-						<span class="equipment-search__conditions-name"></span>
-						<select name="" id="">
-							<option value=""></option>
+					<div class="filter__conditions-item">
+						<span class="filter__conditions-name">КОЛИЧЕСТВО ОСТАНОВОК</span>
+						<select name="" id="" class="filter__conditions-select">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
 						</select>
 					</div>
-				</div>				
+				</div>
+				<div class="filter__goods-list">
+					<div class="filter__goods-item" style="background-image: url(assets/pic/otis-2000.png);">
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">OTIS 2000R</h3>
+							<span class="filter__goods-text">Cоздан для установки в жилых и общественных зданиях с большим пассажиропотоком</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 85 м</td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 400 до 1000 кг</td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>1- 1,6 м/с</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button">Заказать</button>
+						</div>
+					</div>
+					<div class="filter__goods-item" style="background-image: url(assets/pic/otis-prem.png);">
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">OTIS GeN2 Premier</h3>
+							<span class="filter__goods-text">Подходит для установки в многоквартирных домах, офисных и деловых центрах без машинного помещения</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 75 м</td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 400 до 1000 кг</td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>до 1,6 м/с</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button">Заказать</button>
+						</div>
+					</div>
+					<div class="filter__goods-item" style="background-image: url(assets/pic/otis-gen.png);">
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">OTIS GeN2</h3>
+							<span class="filter__goods-text">Универсальная модель для жилых, торговых,офисных зданий большой и средней этажности</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 45 м </td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 320 до 1000 кг </td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>1-2,5 м/с</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button">Заказать</button>
+						</div>
+					</div>
+					<div class="filter__goods-item" style="background-image: url(assets/pic/otis-2000.png);">
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">OTIS 2000R</h3>
+							<span class="filter__goods-text">Cоздан для установки в жилых и общественных зданиях с большим пассажиропотоком</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 85 м</td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 400 до 1000 кг</td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>1- 1,6 м/с</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button">Заказать</button>
+						</div>
+					</div>
+					<div class="filter__goods-item" style="background-image: url(assets/pic/otis-prem.png);">
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">OTIS GeN2 Premier</h3>
+							<span class="filter__goods-text">Подходит для установки в многоквартирных домах, офисных и деловых центрах без машинного помещения</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 75 м</td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 400 до 1000 кг</td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>до 1,6 м/с</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button">Заказать</button>
+						</div>
+					</div>
+					<div class="filter__goods-item" style="background-image: url(assets/pic/otis-gen.png);">
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">OTIS GeN2</h3>
+							<span class="filter__goods-text">Универсальная модель для жилых, торговых,офисных зданий большой и средней этажности</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 45 м </td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 320 до 1000 кг </td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>1-2,5 м/с</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button">Заказать</button>
+						</div>
+					</div>
+				</div>		
 			</div>
 		</div>
 	</section>
-	<!--  equipment search -->
+	<!--  search -->
 
 	<!-- any questions? -->
 	<section class="any-questions">
 		<img src="assets/img/application-image-bg.png" class="any-questions__bg-image">
 		<div class="container">
 			<form class="form-application">
-				<h3 class="form-application__header">Остались вопросы?</h3>
-				<span class="form-application__title">Оставьте заяву и наши менеджеры свяжутся с Вами</span>
+				<h3 class="form-application__header">Не знаете какой лифт выбрать?</h3>
+				<span class="form-application__title">Оставьте заяву и наши специалисты подберут лифт по параметрам</span>
 				<div class="form-application__block">
 					<input type="text" placeholder="Ваше имя">
 					<input type="tel" placeholder="Ваш телефон">
 					<input type="email" placeholder="Ваш E-mail">
-					<input type="submit" value="отправить">
+					<input type="submit" value="оставить заявку">
 					<label class="form-application__accept">
 						<div class="form-application__accept-marker checked"></div>
 						<input type="checkbox" checked="">
-						<span class="form-application__accept-desktop">Нажимая кнопку «ОТПРАВИТЬ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
+						<span class="form-application__accept-desktop">Нажимая кнопку «ОСТАВИТЬ ЗАЯВКУ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
 						<span class="form-application__accept-mobile">Я согласен на обработку данных и с условиями пользовательского соглашения</span>
 					</label>
 				</div>
 			</form>
+			<a href="cost.html" class="link-calculate-cost">Рассчитать стоимость установки пассажирских лифтов</a>
 		</div>
 	</section>
 	<!-- any questions? -->
+
+	<!-- portfolio -->
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="portfolio__header">ПОРТФОЛИО РАБОТ</h2>
+			<span class="header-short-line"></span>
+			<div class="portfolio__block">
+				<div class="portfolio__item" style="background-image: url(assets/pic/moscow-duma.png);">
+					<h3 class="portfolio__title">Московская Городская дума</h3>
+				</div>
+				<div class="portfolio__item" style="background-image: url(assets/pic/mgups.png);">
+					<h3 class="portfolio__title">Московский Государстенный университет путей сообщения</h3>
+				</div>
+				<div class="portfolio__item" style="background-image: url(assets/pic/moscow-ministry.png);">
+					<h3 class="portfolio__title">Министерство финансов Московской области</h3>
+				</div>
+				<div class="portfolio__item" style="background-image: url(assets/pic/moscow-museum.png);">
+					<h3 class="portfolio__title">Московский музей современного искусства</h3>
+				</div>
+			</div>
+			<a href="portfolio.html">СМОТРЕТЬ ВСЕ объекты</a>
+		</div>
+	</section>
+	<!-- portfolio -->
+
+	<!-- why we -->
+	<section class="list-advantages">
+		<div class="list-advantages__block">
+			<h2 class="list-advantages__header">ПОЧЕМУ ЗАКАЗЫВАЮТ ЛИФТЫ У НАС?</h2>
+			<span class="list-advantages__title">ПРИНЦИПИАЛЬНО НОВОЕ КАЧЕСТВО СЕРВИСА</span>
+			<ul class="list-advantages__list">
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">1</span>
+					Гарантийное обслуживание 12 месяцев
+				</li>
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">2</span>
+					Цены на подъёмно-транспортное оборудование напрямую от производителя 
+				</li>
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">3</span>
+					Налаженный контроль качества проведенных работ 
+				</li>
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">4</span>
+					Регулярное обслуживание лифтового оборудования 
+				</li>
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">5</span>
+					Выполнение всех требований технического регламента 
+				</li>
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">6</span>
+					Круглосуточная аварийная служба в Москве и Подмосковье
+				</li>
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">7</span>
+					Большой опыт работы с лифтами иностранного и отечественного производства
+				</li>
+				<li class="list-advantages__item">
+					<span class="list-advantages__number">8</span>
+					Ежегодное повышение квалификации и регулярная аттестация обслуживающего персонала лифтового оборудования
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- why we -->
 
 	<!-- any questions? -->
 	<section class="any-questions">
@@ -296,11 +525,11 @@
 					<input type="text" placeholder="Ваше имя">
 					<input type="tel" placeholder="Ваш телефон">
 					<input type="email" placeholder="Ваш E-mail">
-					<input type="submit" value="отправить">
+					<input type="submit" value="оставить заявку">
 					<label class="form-application__accept">
 						<div class="form-application__accept-marker checked"></div>
 						<input type="checkbox" checked="">
-						<span class="form-application__accept-desktop">Нажимая кнопку «ОТПРАВИТЬ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
+						<span class="form-application__accept-desktop">Нажимая кнопку «ОСТАВИТЬ ЗАЯВКУ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
 						<span class="form-application__accept-mobile">Я согласен на обработку данных и с условиями пользовательского соглашения</span>
 					</label>
 				</div>
@@ -315,26 +544,25 @@
 			<h2 class="info-blog__header">ПОЛЕЗНО ЗНАТЬ</h2>
 			<span class="header-short-line"></span>
 			<div class="info-blog__block">
-				<div class="info-blog__item info-blog__item_1">
+				<div class="info-blog__item" style="background-image: url(assets/pic/amazing-model.png)">
 					<div class="info-blog__text-block">
-						<h3 class="info-blog__item-header">Обзор лифтов российского 
-производства</h3>
+						<h3 class="info-blog__item-header">Удивительные модели лифтов</h3>
 					</div>
 					<div class="info-blog__overlay">
 						<a href="article.html">Подробнее</a>
 					</div>
 				</div>
-				<div class="info-blog__item info-blog__item_2">
+				<div class="info-blog__item" style="background-image: url(assets/pic/fear-elevator.png)">
 					<div class="info-blog__text-block">
-						<h3 class="info-blog__item-header">Виды лифтовых шахт</h3>
+						<h3 class="info-blog__item-header">Почему мы боимся лифтов?</h3>
 					</div>
 					<div class="info-blog__overlay">
 						<a href="article.html">Подробнее</a>
 					</div>
 				</div>
-				<div class="info-blog__item info-blog__item_3">
+				<div class="info-blog__item" style="background-image: url(assets/pic/disign-elevator.png)">
 					<div class="info-blog__text-block">
-						<h3 class="info-blog__item-header">Еще одна статья</h3>
+						<h3 class="info-blog__item-header">Дизайнерская отделка лифтов</h3>
 					</div>
 					<div class="info-blog__overlay">
 						<a href="article.html">Подробнее</a>
@@ -353,7 +581,7 @@
 				<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический в</p>
 			</div>
 			<div class="info__square-lines">
-				<img src="assets/pic/about-elevator.png" class="info__image">
+				<img src="assets/pic/passanger-elevator.png" class="info__image">
 			</div>
 		</div>
 	</section>
@@ -365,7 +593,7 @@
 			<div class="footer__menu">
 				<ul class="footer__menu-list">
 					<li class="footer__menu-column">
-						<a href="/elevator/">ГЛАВНАЯ</a>
+						<a href="/">ГЛАВНАЯ</a>
 					</li>
 					<li class="footer__menu-column">
 						<a style="cursor: default;" onClick="return:false;">ОБОРУДОВАНИЕ</a>
@@ -429,7 +657,7 @@
 			</div>
 			<div class="footer__bottom">
 				<div class="footer__logo">
-					<a href="/elevator">
+					<a href="/">
 						<img src="assets/img/header-logo.png">
 					</a>
 				</div>
