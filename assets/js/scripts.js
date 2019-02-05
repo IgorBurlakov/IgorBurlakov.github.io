@@ -42,10 +42,12 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 
+
 	//Первый элемент селекта
 	if (window.innerWidth < 900) {
 		$('.filter__disabled-option').attr('selected', 'true');
 	}
+
 
 	// Слайдер партнеров
 	if (window.innerWidth < 1201) {cooperationSlick();};
@@ -95,5 +97,41 @@ $(document).ready(function(){
 	        infinite: true
 		});
 	};
+
+
+	$('.filter__tipe-mobile').on('click', function() {
+		$(this).parent().toggleClass('open');
+	})
+
+
+	//Скроллинг по странице
+	$('.filter__tipe-item').on('click', function(event) {
+		event.preventDefault();
+		var linkName = $(this).data('button');
+		$('html, body').animate(
+			{scrollTop: $('#' + linkName).offset().top},
+			1000
+		);
+	});
+
+
+	//Popup
+	$('.filter__goods-button').on('click', function(event) {
+		event.preventDefault();
+		$('.overlay').addClass('active');
+		$('.popup-block').addClass('active');
+		document.body.style.overflow = "hidden"
+	});
+
+	$('.popup-close').on('click', function(event) {
+		event.preventDefault();
+		$('.overlay').removeClass('active');
+		$('.popup-block').removeClass('active');
+		document.body.style.overflow = ""
+	});
+
+	if (window.innerWidth < 400 || window.innerHeight < 750) {
+		$('.popup-block').addClass('mobile-popup');
+	}
 
 });

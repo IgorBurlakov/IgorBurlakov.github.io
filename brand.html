@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Бренды</title>
+	<title>Kleemann</title>
 	<link href="assets/css/slick.css" rel='stylesheet' type='text/css' />
 	<link href="assets/css/slick-theme.css" rel='stylesheet' type='text/css' />
 	<link href="assets/css/style.css" rel='stylesheet' type='text/css' />
@@ -68,43 +68,48 @@
 					<span class="header__mobile-menu-line"></span>
 					<span class="header__mobile-menu-line"></span>
 				</div>
-				<button class="header__button">заказать звонок</button>
+				<button class="header__button hover-orange">заказать звонок</button>
 			</div>
 		</div>
 	</header>
 	<!-- header -->
 
-	<!-- top content -->
-	<section class="top-content" style="background-image: url(assets/pic/639.png)">
+		<!-- top content -->
+	<section class="top-content" style="background-image: url(assets/pic/367.png)">
 		<div class="container top-content__breadcrumb">
 			<ul class="top-content__breadcrumb-list">
 				<li class="top-content__breadcrumb-item"><a href="/">Главная</a></li><span class="top-content__breadcrumb-arrow"></span>
-				<li class="top-content__breadcrumb-item">Пассажирские лифты</li>
+				<li class="top-content__breadcrumb-item">KLEEMANN</li>
 			</ul>
 		</div>
 		<div class="container">
 			<div class="top-content__block">
-				<h1 class="top-content__header">Kleemann</h1>
+				<h1 class="top-content__header">KLEEMANN</h1>
 			</div>
 		</div>		
 	</section>
 	<!-- top content -->
 
+
 	<!-- filter -->
 	<section class="filter">
 		<div class="container">
 			<div class="filter__type">
-				<a href="/" class="filter__tipe-item">Пассажирские</a>
-				<a href="/" class="filter__tipe-item">Грузовые</a>
-				<a href="/" class="filter__tipe-item">Больничные</a>
+				<div class="filter__tipe-mobile">Пассажирские
+					<div class="filter__mobile-arrow"></div>
+				</div>
+				<a href="#passenger-elevator" data-button="passenger-elevator" class="filter__tipe-item">Пассажирские</a>
+				<a href="#freight-elevator" data-button="freight-elevator" class="filter__tipe-item">Грузовые</a>
+				<a href="#hospital-elevator" data-button="hospital-elevator" class="filter__tipe-item">Больничные</a>
 			</div>
-			<h2 class="filter__header">НАЙДИТЕ ЛИФТ ДЛЯ СЕБЯ</h2>
+			<h2 class="filter__header" id="passenger-elevator" data-type="passenger-elevator">ПАССАЖИРСКИЕ ЛИФТЫ KLEEMANN</h2>
 			<span class="header-short-line"></span>
 			<div class="filter__block">
 				<div class="filter__conditions filter__conditions_3">
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">ПРИМЕНЕНИЕ</span>
 						<select name="" id="" class="filter__conditions-select">
+							<option value="" disabled hidden class="filter__disabled-option">ПРИМЕНЕНИЕ</option>
 							<option value="">ЖИЛЫЕ ДОМА</option>
 							<option value="">ЖИЛЫЕ ДОМА</option>
 							<option value="">ЖИЛЫЕ ДОМА</option>
@@ -115,6 +120,7 @@
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">ВЫСОТА ПОДЪЁМА</span>
 						<select name="" id="" class="filter__conditions-select">
+							<option value="" disabled hidden class="filter__disabled-option">ВЫСОТА ПОДЪЁМА</option>
 							<option value="">Менее 5м</option>
 							<option value="">5-10</option>
 							<option value="">10-50</option>
@@ -126,6 +132,7 @@
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">КОЛИЧЕСТВО ОСТАНОВОК</span>
 						<select name="" id="" class="filter__conditions-select">
+							<option value="" disabled hidden class="filter__disabled-option">КОЛИЧЕСТВО ОСТАНОВОК</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -138,155 +145,192 @@
 						</select>
 					</div>
 				</div>
+
 				<div class="filter__goods-list">
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-2000.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/377.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS 2000R</h3>
-							<span class="filter__goods-text">Cоздан для установки в жилых и общественных зданиях с большим пассажиропотоком</span>
+							<h3 class="filter__goods-header">Atlas RPH</h3>
+							<span class="filter__goods-text">Пассажирский лифт  без машинного помещения</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 85 м</td>
+										<td>до 40 м </td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 525 до 1050 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1- 1,6 м/с</td>
+										<td>1 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>14</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-prem.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/310.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2 Premier</h3>
-							<span class="filter__goods-text">Подходит для установки в многоквартирных домах, офисных и деловых центрах без машинного помещения</span>
+							<h3 class="filter__goods-header">Atlas Super Gigas</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 75 м</td>
+										<td>до 45м</td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 375 до 1000 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>до 1,6 м/с</td>
+										<td>1,6 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>16</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-gen.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/311.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2</h3>
-							<span class="filter__goods-text">Универсальная модель для жилых, торговых,офисных зданий большой и средней этажности</span>
+							<h3 class="filter__goods-header">FlexyLIFT</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 45 м </td>
+										<td>до 25 м </td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 320 до 1000 кг </td>
+										<td>от 450 до 1000 кг 0,</td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1-2,5 м/с</td>
+										<td>74 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>9</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-2000.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/377.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS 2000R</h3>
-							<span class="filter__goods-text">Cоздан для установки в жилых и общественных зданиях с большим пассажиропотоком</span>
+							<h3 class="filter__goods-header">Atlas RPH</h3>
+							<span class="filter__goods-text">Пассажирский лифт  без машинного помещения</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 85 м</td>
+										<td>до 40 м </td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 525 до 1050 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1- 1,6 м/с</td>
+										<td>1 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>14</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-prem.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/310.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2 Premier</h3>
-							<span class="filter__goods-text">Подходит для установки в многоквартирных домах, офисных и деловых центрах без машинного помещения</span>
+							<h3 class="filter__goods-header">Atlas Super Gigas</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 75 м</td>
+										<td>до 45м</td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 375 до 1000 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>до 1,6 м/с</td>
+										<td>1,6 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>16</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-gen.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/311.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2</h3>
-							<span class="filter__goods-text">Универсальная модель для жилых, торговых,офисных зданий большой и средней этажности</span>
+							<h3 class="filter__goods-header">FlexyLIFT</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 45 м </td>
+										<td>до 25 м </td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 320 до 1000 кг </td>
+										<td>от 450 до 1000 кг 0,</td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1-2,5 м/с</td>
+										<td>74 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>9</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 				</div>		
@@ -297,11 +341,11 @@
 
 	<!-- any questions? -->
 	<section class="any-questions">
-		<img src="assets/img/application-image-bg.png" class="any-questions__bg-image">
+		<img src="assets/img/application-image-bg.png" class="any-questions__bg-image" style="opacity: 0.5;">
 		<div class="container">
 			<form class="form-application">
-				<h3 class="form-application__header">Остались вопросы?</h3>
-				<span class="form-application__title">Оставьте заяву и наши менеджеры свяжутся с Вами</span>
+				<h3 class="form-application__header">Не нашли то что искали? </h3>
+				<span class="form-application__title">Оставьте заявку и наши специалисты отправят Вам полный каталог!</span>
 				<div class="form-application__block">
 					<input type="text" placeholder="Ваше имя">
 					<input type="tel" placeholder="Ваш телефон">
@@ -310,7 +354,7 @@
 					<label class="form-application__accept">
 						<div class="form-application__accept-marker checked"></div>
 						<input type="checkbox" checked="">
-						<span class="form-application__accept-desktop">Нажимая кнопку «ОТПРАВИТЬ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
+						<span class="form-application__accept-desktop">Нажимая кнопку «отправить», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
 						<span class="form-application__accept-mobile">Я согласен на обработку данных и с условиями пользовательского соглашения</span>
 					</label>
 				</div>
@@ -322,23 +366,25 @@
 	<!-- filter -->
 	<section class="filter">
 		<div class="container">
-			<h2 class="filter__header">НАЙДИТЕ ЛИФТ ДЛЯ СЕБЯ</h2>
+			<h2 class="filter__header" id="freight-elevator" data-type="freight-elevator">ГРУЗОВЫЕ ЛИФТЫ KLEEMANN</h2>
 			<span class="header-short-line"></span>
 			<div class="filter__block">
 				<div class="filter__conditions filter__conditions_3">
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">ПРИМЕНЕНИЕ</span>
 						<select name="" id="" class="filter__conditions-select">
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
+							<option value="" disabled hidden class="filter__disabled-option">ПРИМЕНЕНИЕ</option>
+							<option value="">ТОРГОВЫЕ ЦЕНТРЫ</option>
+							<option value="">ТОРГОВЫЕ ЦЕНТРЫ</option>
+							<option value="">ТОРГОВЫЕ ЦЕНТРЫ</option>
+							<option value="">ТОРГОВЫЕ ЦЕНТРЫ</option>
+							<option value="">ТОРГОВЫЕ ЦЕНТРЫ</option>
 						</select>
 					</div>
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">ВЫСОТА ПОДЪЁМА</span>
 						<select name="" id="" class="filter__conditions-select">
+							<option value="" disabled hidden class="filter__disabled-option">ВЫСОТА ПОДЪЁМА</option>
 							<option value="">Менее 5м</option>
 							<option value="">5-10</option>
 							<option value="">10-50</option>
@@ -350,6 +396,7 @@
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">КОЛИЧЕСТВО ОСТАНОВОК</span>
 						<select name="" id="" class="filter__conditions-select">
+							<option value="" disabled hidden class="filter__disabled-option">КОЛИЧЕСТВО ОСТАНОВОК</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -362,62 +409,15 @@
 						</select>
 					</div>
 				</div>
+
 				<div class="filter__goods-list">
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-2000.png);"></div>
-						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS 2000R</h3>
-							<span class="filter__goods-text">Cоздан для установки в жилых и общественных зданиях с большим пассажиропотоком</span>
-							<span class="filter__goods-line"></span>
-							<table class="filter__goods-detail">
-								<tbody>
-									<tr>
-										<td>Подъем</td>
-										<td>до 85 м</td>
-									</tr>
-									<tr>
-										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
-									</tr>
-									<tr>
-										<td>Скорость</td>
-										<td>1- 1,6 м/с</td>
-									</tr>
-								</tbody>
-							</table>
-							<button class="filter__goods-button">Заказать</button>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/368.png" class="filter__goods-image">
 						</div>
-					</div>
-					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-prem.png);"></div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2 Premier</h3>
-							<span class="filter__goods-text">Подходит для установки в многоквартирных домах, офисных и деловых центрах без машинного помещения</span>
-							<span class="filter__goods-line"></span>
-							<table class="filter__goods-detail">
-								<tbody>
-									<tr>
-										<td>Подъем</td>
-										<td>до 75 м</td>
-									</tr>
-									<tr>
-										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
-									</tr>
-									<tr>
-										<td>Скорость</td>
-										<td>до 1,6 м/с</td>
-									</tr>
-								</tbody>
-							</table>
-							<button class="filter__goods-button">Заказать</button>
-						</div>
-					</div>
-					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-gen.png);"></div>
-						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2</h3>
-							<span class="filter__goods-text">Универсальная модель для жилых, торговых,офисных зданий большой и средней этажности</span>
+							<h3 class="filter__goods-header">Atlas GIGAS</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
@@ -427,72 +427,90 @@
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 320 до 1000 кг </td>
+										<td>от 1050 до 2500 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1-2,5 м/с</td>
+										<td>1,6 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>16</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-2000.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/369.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS 2000R</h3>
-							<span class="filter__goods-text">Cоздан для установки в жилых и общественных зданиях с большим пассажиропотоком</span>
+							<h3 class="filter__goods-header">Atlas Super Gigas</h3>
+							<span class="filter__goods-text">Грузовой лифт без машинного помещения</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 85 м</td>
+										<td>до 45м</td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 2500 до 5000 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1- 1,6 м/с</td>
+										<td>1 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>16</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-prem.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/371.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2 Premier</h3>
-							<span class="filter__goods-text">Подходит для установки в многоквартирных домах, офисных и деловых центрах без машинного помещения</span>
+							<h3 class="filter__goods-header">СOMPACT</h3>
+							<span class="filter__goods-text">Грузовой лифт без машинного помещения</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 75 м</td>
+										<td>до 11,5 м </td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 300 до 1500 кг 0,</td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>до 1,6 м/с</td>
+										<td>0,15 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>4</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-gen.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/368.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2</h3>
-							<span class="filter__goods-text">Универсальная модель для жилых, торговых,офисных зданий большой и средней этажности</span>
+							<h3 class="filter__goods-header">Atlas GIGAS</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
@@ -502,18 +520,84 @@
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 320 до 1000 кг </td>
+										<td>от 1050 до 2500 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1-2,5 м/с</td>
+										<td>1,6 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>16</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
-				</div>		
+					<div class="filter__goods-item">
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/369.png" class="filter__goods-image">
+						</div>
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">Atlas Super Gigas</h3>
+							<span class="filter__goods-text">Грузовой лифт без машинного помещения</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 45м</td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 2500 до 5000 кг </td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>1 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>16</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button hover-orange">Заказать</button>
+						</div>
+					</div>
+					<div class="filter__goods-item">
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/371.png" class="filter__goods-image">
+						</div>
+						<div class="filter__goods-description">
+							<h3 class="filter__goods-header">СOMPACT</h3>
+							<span class="filter__goods-text">Грузовой лифт без машинного помещения</span>
+							<span class="filter__goods-line"></span>
+							<table class="filter__goods-detail">
+								<tbody>
+									<tr>
+										<td>Подъем</td>
+										<td>до 11,5 м </td>
+									</tr>
+									<tr>
+										<td>Норма</td>
+										<td>от 300 до 1500 кг 0,</td>
+									</tr>
+									<tr>
+										<td>Скорость</td>
+										<td>0,15 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>4</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="filter__goods-button hover-orange">Заказать</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -521,11 +605,11 @@
 
 	<!-- any questions? -->
 	<section class="any-questions">
-		<img src="assets/img/application-image-bg.png" class="any-questions__bg-image">
+		<img src="assets/img/bg-2.png" class="any-questions__bg-image" style="opacity: 0.5;">
 		<div class="container">
 			<form class="form-application">
-				<h3 class="form-application__header">Остались вопросы?</h3>
-				<span class="form-application__title">Оставьте заяву и наши менеджеры свяжутся с Вами</span>
+				<h3 class="form-application__header">Не нашли то что искали? </h3>
+				<span class="form-application__title">Оставьте заявку и наши специалисты отправят Вам полный каталог!</span>
 				<div class="form-application__block">
 					<input type="text" placeholder="Ваше имя">
 					<input type="tel" placeholder="Ваш телефон">
@@ -534,7 +618,7 @@
 					<label class="form-application__accept">
 						<div class="form-application__accept-marker checked"></div>
 						<input type="checkbox" checked="">
-						<span class="form-application__accept-desktop">Нажимая кнопку «ОТПРАВИТЬ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
+						<span class="form-application__accept-desktop">Нажимая кнопку «отправить», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
 						<span class="form-application__accept-mobile">Я согласен на обработку данных и с условиями пользовательского соглашения</span>
 					</label>
 				</div>
@@ -546,23 +630,25 @@
 	<!-- filter -->
 	<section class="filter">
 		<div class="container">
-			<h2 class="filter__header">НАЙДИТЕ ЛИФТ ДЛЯ СЕБЯ</h2>
+			<h2 class="filter__header" id="hospital-elevator" data-type="hospital-elevator">БОЛЬНИЧНЫЕ ЛИФТЫ KLEEMANN</h2>
 			<span class="header-short-line"></span>
 			<div class="filter__block">
 				<div class="filter__conditions filter__conditions_3">
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">ПРИМЕНЕНИЕ</span>
 						<select name="" id="" class="filter__conditions-select">
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
-							<option value="">ЖИЛЫЕ ДОМА</option>
+							<option value="" disabled hidden class="filter__disabled-option">ПРИМЕНЕНИЕ</option>
+							<option value="">БОЛЬНИЦЫ</option>
+							<option value="">БОЛЬНИЦЫ</option>
+							<option value="">БОЛЬНИЦЫ</option>
+							<option value="">БОЛЬНИЦЫ</option>
+							<option value="">БОЛЬНИЦЫ</option>
 						</select>
 					</div>
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">ВЫСОТА ПОДЪЁМА</span>
 						<select name="" id="" class="filter__conditions-select">
+							<option value="" disabled hidden class="filter__disabled-option">ВЫСОТА ПОДЪЁМА</option>
 							<option value="">Менее 5м</option>
 							<option value="">5-10</option>
 							<option value="">10-50</option>
@@ -574,6 +660,7 @@
 					<div class="filter__conditions-item">
 						<span class="filter__conditions-name">КОЛИЧЕСТВО ОСТАНОВОК</span>
 						<select name="" id="" class="filter__conditions-select">
+							<option value="" disabled hidden class="filter__disabled-option">КОЛИЧЕСТВО ОСТАНОВОК</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -586,83 +673,102 @@
 						</select>
 					</div>
 				</div>
+
 				<div class="filter__goods-list">
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-2000.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/314.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS 2000R</h3>
-							<span class="filter__goods-text">Cоздан для установки в жилых и общественных зданиях с большим пассажиропотоком</span>
+							<h3 class="filter__goods-header">Atlas PREMIUM</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 85 м</td>
+										<td>до 65 м </td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 375 до 1000 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1- 1,6 м/с</td>
+										<td>1,6 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>24</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-prem.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/315.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2 Premier</h3>
-							<span class="filter__goods-text">Подходит для установки в многоквартирных домах, офисных и деловых центрах без машинного помещения</span>
+							<h3 class="filter__goods-header">Atlas Gigas</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 75 м</td>
+										<td>до 45м</td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 400 до 1000 кг</td>
+										<td>от 1050 до 2000 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>до 1,6 м/с</td>
+										<td>1,6 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>16</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
 					<div class="filter__goods-item">
-						<div class="filter__goods-image" style="background-image: url(assets/pic/otis-gen.png);"></div>
+						<div class="filter__goods-image-block">
+							<img src="assets/pic/314.png" class="filter__goods-image">
+						</div>
 						<div class="filter__goods-description">
-							<h3 class="filter__goods-header">OTIS GeN2</h3>
-							<span class="filter__goods-text">Универсальная модель для жилых, торговых,офисных зданий большой и средней этажности</span>
+							<h3 class="filter__goods-header">Atlas PREMIUM</h3>
+							<span class="filter__goods-text">Может быть установлен в шахтах с машинным помещением или без него</span>
 							<span class="filter__goods-line"></span>
 							<table class="filter__goods-detail">
 								<tbody>
 									<tr>
 										<td>Подъем</td>
-										<td>до 45 м </td>
+										<td>до 65 м </td>
 									</tr>
 									<tr>
 										<td>Норма</td>
-										<td>от 320 до 1000 кг </td>
+										<td>от 375 до 1000 кг </td>
 									</tr>
 									<tr>
 										<td>Скорость</td>
-										<td>1-2,5 м/с</td>
+										<td>1,6 м/с</td>
+									</tr>
+									<tr>
+										<td>Количество остановок</td>
+										<td>24</td>
 									</tr>
 								</tbody>
 							</table>
-							<button class="filter__goods-button">Заказать</button>
+							<button class="filter__goods-button hover-orange">Заказать</button>
 						</div>
 					</div>
-				</div>		
+				</div>
 			</div>
 		</div>
 	</section>
@@ -670,11 +776,11 @@
 
 	<!-- any questions? -->
 	<section class="any-questions">
-		<img src="assets/img/application-image-bg.png" class="any-questions__bg-image">
+		<img src="assets/img/bg-2.png" class="any-questions__bg-image" style="opacity: 0.5;">
 		<div class="container">
 			<form class="form-application">
-				<h3 class="form-application__header">Остались вопросы?</h3>
-				<span class="form-application__title">Оставьте заяву и наши менеджеры свяжутся с Вами</span>
+				<h3 class="form-application__header">Не нашли то что искали? </h3>
+				<span class="form-application__title">Оставьте заявку и наши специалисты отправят Вам полный каталог!</span>
 				<div class="form-application__block">
 					<input type="text" placeholder="Ваше имя">
 					<input type="tel" placeholder="Ваш телефон">
@@ -683,7 +789,7 @@
 					<label class="form-application__accept">
 						<div class="form-application__accept-marker checked"></div>
 						<input type="checkbox" checked="">
-						<span class="form-application__accept-desktop">Нажимая кнопку «ОТПРАВИТЬ», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
+						<span class="form-application__accept-desktop">Нажимая кнопку «отправить», я выражаю согласие на обработку  моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
 						<span class="form-application__accept-mobile">Я согласен на обработку данных и с условиями пользовательского соглашения</span>
 					</label>
 				</div>
@@ -699,20 +805,36 @@
 			<span class="header-short-line"></span>
 			<div class="portfolio__block">
 				<div class="portfolio__item">
-					<div class="portfolio__image" style="background-image: url(assets/pic/moscow-duma.png);"></div>
-					<h3 class="portfolio__title">Московская Городская дума</h3>
+					<a href="portfolio-object.html">
+						<div class="portfolio__image-block">
+							<img src="assets/pic/moscow-duma.png" class="portfolio__image">
+						</div>
+						<h3 class="portfolio__title">Московская Городская дума</h3>
+					</a>
 				</div>
 				<div class="portfolio__item">
-					<div class="portfolio__image" style="background-image: url(assets/pic/mgups.png);"></div>
-					<h3 class="portfolio__title">Московский Государстенный университет путей сообщения</h3>
+					<a href="portfolio-object.html">
+						<div class="portfolio__image-block">
+							<img src="assets/pic/mgups.png" class="portfolio__image">
+						</div>
+							<h3 class="portfolio__title">Московский Государстенный университет путей сообщения</h3>
+						</a>
 				</div>
 				<div class="portfolio__item">
-					<div class="portfolio__image" style="background-image: url(assets/pic/moscow-ministry.png);"></div>
-					<h3 class="portfolio__title">Министерство финансов Московской области</h3>
+					<a href="portfolio-object.html">
+						<div class="portfolio__image-block">
+							<img src="assets/pic/moscow-ministry.png" class="portfolio__image">
+						</div>
+						<h3 class="portfolio__title">Министерство финансов Московской области</h3>
+					</a>
 				</div>
 				<div class="portfolio__item">
-					<div class="portfolio__image" style="background-image: url(assets/pic/moscow-museum.png);"></div>
-					<h3 class="portfolio__title">Московский музей современного искусства</h3>
+					<a href="portfolio-object.html">
+						<div class="portfolio__image-block">
+							<img src="assets/pic/moscow-museum.png" class="portfolio__image">
+						</div>
+						<h3 class="portfolio__title">Московский музей современного искусства</h3>
+					</a>
 				</div>
 			</div>
 			<a href="portfolio.html" class="portfolio__button">СМОТРЕТЬ ВСЕ объекты</a>
@@ -726,7 +848,10 @@
 			<h2 class="info-blog__header">ПОЛЕЗНО ЗНАТЬ</h2>
 			<span class="header-short-line"></span>
 			<div class="info-blog__block">
-				<div class="info-blog__item" style="background-image: url(assets/pic/amazing-model.png)">
+				<div class="info-blog__item">
+					<div class="info-blog__image-block">
+						<img src="assets/pic/amazing-model.png" class="info-blog__image">
+					</div>
 					<div class="info-blog__text-block">
 						<h3 class="info-blog__item-header">Удивительные модели лифтов</h3>
 					</div>
@@ -734,7 +859,10 @@
 						<a href="article.html">Подробнее</a>
 					</div>
 				</div>
-				<div class="info-blog__item" style="background-image: url(assets/pic/fear-elevator.png)">
+				<div class="info-blog__item">
+					<div class="info-blog__image-block">
+						<img src="assets/pic/fear-elevator.png" class="info-blog__image">
+					</div>
 					<div class="info-blog__text-block">
 						<h3 class="info-blog__item-header">Почему мы боимся лифтов?</h3>
 					</div>
@@ -742,7 +870,10 @@
 						<a href="article.html">Подробнее</a>
 					</div>
 				</div>
-				<div class="info-blog__item" style="background-image: url(assets/pic/disign-elevator.png)">
+				<div class="info-blog__item">
+					<div class="info-blog__image-block">
+						<img src="assets/pic/disign-elevator.png" class="info-blog__image">
+					</div>
 					<div class="info-blog__text-block">
 						<h3 class="info-blog__item-header">Дизайнерская отделка лифтов</h3>
 					</div>
@@ -759,15 +890,37 @@
 	<section class="info">
 		<div class="container">
 			<div class="info__text">
-				<h2 class="info__header">О ЛИФТАХ</h2>
+				<h2 class="info__header">KLEEMANN</h2>
 				<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический в</p>
 			</div>
 			<div class="info__square-lines">
-				<img src="assets/pic/passanger-elevator.png" class="info__image">
+				<img src="assets/pic/352.png" class="info__image">
 			</div>
 		</div>
 	</section>
 	<!-- seo info -->
+
+	<!-- popup -->
+	<div class="overlay">
+		<div class="popup-block">
+			<div class="popup-close"></div>
+			<form class="form-application">
+				<h3 class="form-application__header">Оформить заказ</h3>
+				<div class="form-application__block">
+					<input type="text" placeholder="Ваше имя">
+					<input type="tel" placeholder="Ваш телефон">
+					<input type="email" placeholder="Ваш E-mail">
+					<label class="form-application__accept">
+						<div class="form-application__accept-marker checked"></div>
+						<input type="checkbox" checked="">
+						<span class="form-application__accept-desktop">Нажимая кнопку «заказать», я выражаю согласие на обработку моих персональных данных на условиях и для целей, определённых в Политике обработки персональных данных.</span>
+					</label>
+					<input type="submit" value="заказать">
+				</div>
+			</form>			
+		</div>
+	</div>
+	<!-- popup -->
 
 	<!-- footer -->
 	<footer class="footer">
