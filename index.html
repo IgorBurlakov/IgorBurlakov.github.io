@@ -68,7 +68,7 @@
 					<span class="header__mobile-menu-line"></span>
 					<span class="header__mobile-menu-line"></span>
 				</div>
-				<button class="header__button">заказать звонок</button>
+				<button class="header__button hover-orange">заказать звонок</button>
 			</div>
 		</div>
 	</header>
@@ -335,11 +335,11 @@
 			<span class="header-short-line"></span>
 			<div class="calculator__block">
 				<div class="calculator__form-choice">
-					<button class="calculator__button active" data-calculator="elevator">КАЛЬКУЛЯТОР ЛИФТОВ</button>
-					<button class="calculator__button" data-calculator="service">КАЛЬКУЛЯТОР СЕРВИСНОГО ОБСЛУЖИВАНИЯ</button>
+					<a href="#calculator-elevator" class="calculator__button calculator active" data-calculator="tab-elevator">КАЛЬКУЛЯТОР ЛИФТОВ</a>
+					<a href="#calculator-service" class="calculator__button calculator" data-calculator="tab-service">КАЛЬКУЛЯТОР СЕРВИСНОГО ОБСЛУЖИВАНИЯ</a>
 				</div>
 				<div class="calculator__body">
-					<div class="calculator__elevator active">
+					<div class="calculator__elevator active" id="calculator-elevator">
 						<form class="calculator__elevator-form">
 							<div class="calculator__row">
 								<div class="calculator__property">Выберите тип лифта<span class="calculator__arrow-mobile"></span></div>
@@ -566,7 +566,7 @@
 							<input type="submit" class="calculator__form-submit" value="Получить расчёт">
 						</form>
 					</div>
-					<div class="calculator__service">
+					<div class="calculator__service" id="calculator-service">
 						<form class="calculator__service-form">
 							<div class="calculator__row">
 								<div class="calculator__property">Тип подъёмного оборудования<span class="calculator__arrow-mobile"></span></div>
@@ -696,7 +696,10 @@
 			<h2 class="info-blog__header">ПОЛЕЗНО ЗНАТЬ</h2>
 			<span class="header-short-line"></span>
 			<div class="info-blog__block">
-				<div class="info-blog__item" style="background-image: url(assets/pic/elevators_russian_production.png)">
+				<div class="info-blog__item">
+					<div class="info-blog__image-block">
+						<img src="assets/pic/elevators_russian_production.png" class="info-blog__image">
+					</div>
 					<div class="info-blog__text-block">
 						<h3 class="info-blog__item-header">Обзор лифтов российского производства</h3>
 					</div>
@@ -704,7 +707,10 @@
 						<a href="article.html">Подробнее</a>
 					</div>
 				</div>
-				<div class="info-blog__item" style="background-image: url(assets/pic/types_elevator_shafts.png)">
+				<div class="info-blog__item">
+					<div class="info-blog__image-block">
+						<img src="assets/pic/types_elevator_shafts.png" class="info-blog__image">
+					</div>
 					<div class="info-blog__text-block">
 						<h3 class="info-blog__item-header">Виды лифтовых шахт</h3>
 					</div>
@@ -712,7 +718,10 @@
 						<a href="article.html">Подробнее</a>
 					</div>
 				</div>
-				<div class="info-blog__item" style="background-image: url(assets/pic/another_article.png)">
+				<div class="info-blog__item">
+					<div class="info-blog__image-block">
+						<img src="assets/pic/another_article.png" class="info-blog__image">
+					</div>
 					<div class="info-blog__text-block">
 						<h3 class="info-blog__item-header">Еще одна статья</h3>
 					</div>

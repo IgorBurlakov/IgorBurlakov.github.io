@@ -18,14 +18,15 @@ $(document).ready(function(){
 		$(this).closest('.equipment__wrapper-mobile').addClass('open');
 	});
 
-	$('.calculator__button').on('click', function() {
+	$('.calculator__button').on('click', function(event) {
+		event.preventDefault();
 		$(this).parent().children().removeClass('active');
-		if ($(this).data('calculator') == 'elevator') {
+		if ($(this).data('calculator') == 'tab-elevator') {
 			$(this).addClass('active');
 			$('.calculator__elevator').addClass('active');
 			$('.calculator__service').removeClass('active');
 		}
-		if ($(this).data('calculator') == 'service') {
+		if ($(this).data('calculator') == 'tab-service') {
 			$(this).addClass('active');
 			$('.calculator__service').addClass('active');
 			$('.calculator__elevator').removeClass('active');
@@ -41,7 +42,13 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 
+	//Первый элемент селекта
+	if (window.innerWidth < 900) {
+		$('.filter__disabled-option').attr('selected', 'true');
+	}
+
 	// Слайдер партнеров
+	if (window.innerWidth < 1201) {cooperationSlick();};
 	function cooperationSlick() {
 		$('.cooperation__block').slick({
 	        slidesToShow: 4,
@@ -58,27 +65,35 @@ $(document).ready(function(){
 			]
 		});
 	};
-	if (window.innerWidth < 1201) {
-		cooperationSlick();
-	};
 
 	// Слайдер статей блога
+	if (window.innerWidth < 768) {infoBlogSlick();};
 	function infoBlogSlick() {
 		$('.info-blog__block').slick({
-			responsive: [
-			    {
-			      breakpoint: 767,
-			      settings: {
-			        slidesToShow: 1,
-			        slidesToScroll: 1,
-			        infinite: true,
-			      }
-			    }
-			]
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        infinite: true,
 		});
 	};
 
-	if (window.innerWidth < 768) {
-		infoBlogSlick();
+	// Слайдер товаров
+	if (window.innerWidth < 981) {filterGoodsSlick();};
+	function filterGoodsSlick() {
+		$('.filter__goods-list').slick({
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        infinite: true
+		});
 	};
+
+	// Слайдер портфолио
+	if (window.innerWidth < 768) {portfolioSlick();};
+	function portfolioSlick() {
+		$('.portfolio__block').slick({
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        infinite: true
+		});
+	};
+
 });
