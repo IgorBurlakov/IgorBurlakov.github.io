@@ -2048,17 +2048,18 @@ a.calculator__button {
     transition-duration: .2s;
 }
 .calculator__value {
-    flex-direction: column;
-    height: 0;
-    overflow: hidden;
-    border: none;
-  transition-duration: .2s
+  flex-direction: column;
+  height: initial;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  overflow: hidden;
+  border: none;
 }
 .calculator__property.open + .calculator__value {
-  height: auto;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
   border: 1px solid #d24a43;
   border-top: none;
-  transition-duration: .2s;
 }
 .calculator__value-wrapper {
     border-right: none;
@@ -2178,15 +2179,15 @@ a.calculator__button {
 }
 
 .price__value-list {
-    max-height: 0;
-    height: 235px;
-    overflow: hidden;
-    transition-duration: .2s;
+  height: initial;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  overflow: hidden;
 }
 
 .price__value-list.open {
-    max-height: auto;
-    transition-duration: .2s;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
 }
 .price__arrow-mobile {
     display: block;
