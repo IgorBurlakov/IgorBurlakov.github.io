@@ -733,6 +733,7 @@ template {
     height: 580px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: relative;
     margin-bottom: 100px;
 }
@@ -2095,41 +2096,114 @@ a.calculator__button {
     max-width: 850px;
     margin: 30px auto 0;
 }
-.price__wrapper {
+.price__block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin: 60px auto 100px;
+    max-width: 850px;
 }
-.price__block {
+.price__block-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 26%;
 }
-.price__block-property {
-    margin-bottom: 20px;
+.price__property {
+    margin-bottom: 30px;
 }
-.price__block-list {
+.price__block-value {
+    width: 100%;
+}
+.price__value-list {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.price__block-item {
+.price__value-item {
+    font-size: 12px;
     text-align: center;
     padding: 10px;
     border: 1px solid #00043e;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+.price__value-item.active {
+    color: #fff;
+    background-color: #00043e;
+}
+.price__conditions{
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+}
+.price__conditions-image {
+	position: absolute;
+	left: 0;
+	top: 50%;
 }
 .price__conditions-header {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    color: #3e3535;
 }
 .price__conditions-list {
   margin-left: 18px;
 }
 .price__conditions-item {
+    font-size: 12px;
     list-style-type: square;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+.price__block {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 30px auto 30px;
+}
+
+.price__block-item {
+    width: 100%;
     margin-bottom: 10px;
+}
+
+.price__property {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #00043e;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.price__value-list {
+    max-height: 0;
+    height: 235px;
+    overflow: hidden;
+    transition-duration: .2s;
+}
+
+.price__value-list.open {
+    max-height: auto;
+    transition-duration: .2s;
+}
+.price__arrow-mobile {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 20px;
+    transition-duration: .2s;
+}
+.price__property.open .price__arrow-mobile {
+    transform: rotateZ(135deg);
+    transition-duration: .2s;
+}
 }
 
 

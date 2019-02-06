@@ -5,6 +5,7 @@ $(document).ready(function(){
 		$('.header__menu').toggleClass('open');
 	});
 
+
 	$('.form-application__accept').on('click', function() {
 		var formCheck = $(this).children('input').is( ":checked" );
 		if (formCheck) {
@@ -14,9 +15,11 @@ $(document).ready(function(){
 		}
 	});
 
+
 	$('.equipment__button-more').on('click', function() {
 		$(this).closest('.equipment__wrapper-mobile').addClass('open');
 	});
+
 
 	$('.calculator__button').on('click', function(event) {
 		event.preventDefault();
@@ -33,13 +36,24 @@ $(document).ready(function(){
 		}
 	});
 
+
 	$('.calculator__value-wrapper').on('click', function() {
 		$(this).parent().children().removeClass('checked');
 		$(this).addClass('checked');
 	});
 
+
 	$('.calculator__property').on('click', function() {
 		$(this).toggleClass('open');
+	});
+
+	$('.price__property').on('click', function() {
+		$(this).toggleClass('open');
+		$(this).next().children().toggleClass('open');
+	});
+	$('#price-value .price__value-item').on('click', function() {
+		$(this).parent().children().removeClass('active');
+		$(this).addClass('active');
 	});
 
 
