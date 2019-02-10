@@ -192,7 +192,7 @@ $(document).ready(function(){
 
 
 	//Popup
-	$('.filter__goods-button').on('click', function(event) {
+	$('.filter__goods-button, .header__button').on('click', function(event) {
 		event.preventDefault();
 		$('.overlay').addClass('active');
 		$('.popup-block').addClass('active');

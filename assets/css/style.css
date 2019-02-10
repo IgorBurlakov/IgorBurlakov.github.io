@@ -945,7 +945,7 @@ template {
 /* advantages
    ========================================================================== */
 .advantages {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .advantages__block {
@@ -1043,7 +1043,7 @@ template {
 /* equipment
    ========================================================================== */
 .equipment {
-  margin-bottom: 70px;
+  margin-bottom: 135px;
 }
 .equipment__block {
     margin-top: 70px;
@@ -1375,7 +1375,7 @@ template {
 /* services
    ========================================================================== */
 .services {
-  margin-bottom: 70px;
+  margin-bottom: 110px;
 }
 .services__block {
     margin-top: 70px;
@@ -1888,7 +1888,7 @@ select.filter__conditions-select::-ms-expand {
 /* calculator
    ========================================================================== */
 .calculator {
-    margin-bottom: 100px;
+    margin-bottom: 135px;
 }
 .calculator__header_visible {
   margin-bottom: 50px;
@@ -2321,7 +2321,7 @@ a.portfolio__button {
     color: #f24941;
     border: 1px solid #f24941;
 }
-a.portfolio__button:active {
+a.portfolio__button:hover {
   color: #f78b4d;
   border-color: #ff8236;
   -webkit-box-shadow: 0px 10px 28px 0px rgba(231,218,72,0.21);
