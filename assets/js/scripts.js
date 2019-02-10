@@ -52,8 +52,13 @@ $(document).ready(function(){
 		$(this).next().children().toggleClass('open');
 	});
 	$('#price-value .price__value-item').on('click', function() {
-		$(this).parent().children().removeClass('active');
-		$(this).addClass('active');
+		var priceSelected = $(this).data('priceValue');
+		$('.price__value-item').removeClass('active');
+		$('.price__value-item').filter(function() {
+			if ($(this).data('priceValue') == priceSelected) {
+				$(this).addClass('active');
+			}
+		});
 	});
 
 
@@ -81,6 +86,64 @@ $(document).ready(function(){
 			]
 		});
 	};
+
+	// Слайдер клиентов
+	$('#client-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        asNavFor: '#client-slider-2',
+		responsive: [
+		    {
+		      breakpoint: 980,
+		      settings: {
+		        arrows: true
+		      }
+		    }
+		]        
+	});
+	$('#client-slider-2').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        focusOnSelect: true,
+        asNavFor: '#client-slider'
+	});
+
+	//Слайдер отзывов
+	$('#reviews').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+        arrows: true,
+        responsive: [
+		    {
+		      breakpoint: 800,
+		      settings: {
+				slidesToShow: 1,
+        		slidesToScroll: 1,		      }
+		    }
+		]
+	});
+
+
+	//Слайдер лицензий
+	$('#licenses').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+        arrows: true,
+        responsive: [
+		    {
+		      breakpoint: 800,
+		      settings: {
+				slidesToShow: 1,
+        		slidesToScroll: 1,		      }
+		    }
+		]
+	});
 
 	// Слайдер статей блога
 	if (window.innerWidth < 768) {infoBlogSlick();};
@@ -116,7 +179,6 @@ $(document).ready(function(){
 	$('.filter__tipe-mobile').on('click', function() {
 		$(this).parent().toggleClass('open');
 	})
-
 
 	//Скроллинг по странице
 	$('.filter__tipe-item').on('click', function(event) {
