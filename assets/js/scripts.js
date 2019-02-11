@@ -129,6 +129,18 @@ $(document).ready(function(){
 	});
 
 
+	// Слайдер о компании
+	if (window.innerWidth < 1201) {aboutSlick();};
+	function aboutSlick() {
+		$('.about-advantages__block').slick({
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        infinite: true,
+	        arrows: true,
+	        dots: true
+		});
+	};
+
 	//Слайдер лицензий
 	$('#licenses').slick({
         slidesToShow: 4,
