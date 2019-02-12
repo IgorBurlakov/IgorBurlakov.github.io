@@ -2959,6 +2959,69 @@ a.portfolio__button:hover {
 }
 }
 
+
+/* article
+   ========================================================================== */
+.article__category_mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article__category-header {
+    text-transform: uppercase;
+}
+
+.article__category-block {
+    margin: 20px auto 30px;
+}
+
+.main-article__block {}
+
+.article__item {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.article__text {
+    flex-basis: 55%;
+    padding: 20px 40px 20px 50px;
+}
+
+.article__header {
+    font-size: 23px;
+    line-height: 24px;
+    font-family: "OpenSans";
+    text-align: left;
+}
+
+.article__preview {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.article__link {}
+
+.article__image {
+    flex-basis: 45%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article__block {
+    flex-basis: 730px;
+}
+
+
 /* footer
    ========================================================================== */
 .footer {
