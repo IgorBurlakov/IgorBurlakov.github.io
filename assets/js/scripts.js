@@ -42,6 +42,15 @@ $(document).ready(function(){
 		$(this).addClass('checked');
 	});
 
+	$('.article__category-item').on('click', function() {
+		$(this).parent().children().removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$('.article__navigation-item').on('click', function() {
+		$(this).parent().children().removeClass('active');
+		$(this).addClass('active');
+	});
 
 	$('.calculator__property').on('click', function() {
 		$(this).toggleClass('open');
